@@ -1,0 +1,52 @@
+{% include "head.html" %}
+
+    <script type="text/javascript"> 
+	  $(document).ready(function(){
+ 		  $("#pass").click(function(event){
+		     alert("pass");
+ 		  });
+   		  $("#failed").click(function(event){
+		     alert("failed");
+ 		  });
+	 });
+    </script> 
+	
+{% include "navigation.html" %}
+
+<div id="main">
+	<div id="cases">
+    	<h2>Test cases</h2> 
+			<div id="info_text">We have {{cases|length}} testcases </div>
+			{%for i in suites%}
+			 <div id="space"></div><a href="http://{{host}}/suite/{{suite.id}}/case/{{i.id}}/">{{i.name}}</a><br>
+			{%endfor%}
+	</div>
+	<div id="steps">
+	    <h2>{{case.name}}</h2>  
+		<div id="info_text">{{case.description}}</div>
+		<table id="table">
+		{{case.step}}
+	    </table> 
+	</div>
+	<div id="result">
+		<form action="http://{{host}}/suite/{{suite.id}}/case/{{case.id}}/" method="post">{%csrf_token%}
+			<input type='submit' name='pass' value='Pass'>
+			<input type='submit' name='failed' value='Failed'> 
+		</form>
+	</div>
+	{% if what_result = 0 %}
+   	 <div id="No">No result</div> 
+	{% endif %}
+	{% if what_result = 1 %}
+   	 <div id="pass">Pass</div> 
+	{% endif %}
+	{% if what_result = 2 %}
+   	 <div id="failed">Failed</div> 
+	{% endif %}
+	
+	{{check}}
+</div>
+<footer> 
+</footer> 
+</body> 
+</html> 	

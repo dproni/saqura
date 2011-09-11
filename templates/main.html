@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="main">
+	<div id="cases">
+    	<h2>Test cases</h2> 
+			<div id="info_text">We have {{cases|length}} testcases </div>
+			{%for i in cases.all%}
+			 <div id="space"></div><a href="/main/{{suite.id}}/{{i.id}}/">{{i.name}}</a><br>
+			{%endfor%}
+	</div>
+	<div id="steps">
+	    <h2>{{case.name}}</h2>  
+		<div id="info_text">{{case.description}}</div>
+		<table id="table">
+		{{case.step|escape|safe}}
+	    </table> 
+	</div>
+	<div id="result">
+		<form action="/pass/{{task_id}}/suite/{{suite.id}}/case/{{case.id}}/" method="post">{%csrf_token%}
+			<input type='submit' name='pass' value='Pass'>
+			<input type='submit' name='failed' value='Failed'> 
+		</form>
+	</div>
+	{% if what_result = 0 %}
+   	 <div id="No">No result</div> 
+	{% endif %}
+	{% if what_result = 1 %}
+   	 <div id="pass">Pass</div> 
+	{% endif %}
+	{% if what_result = 2 %}
+   	 <div id="failed">Failed</div> 
+	{% endif %}
+	{{ job_id }}
+{#	{{check}} {{ user }}#}
+</div>
+
+{% endblock %}

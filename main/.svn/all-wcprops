@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/5/trunk/QAtool
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/43/trunk/QAtool/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/43/trunk/QAtool/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/5/trunk/QAtool/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/5/trunk/QAtool/tests.py
+END
+form.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/43/trunk/QAtool/form.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/43/trunk/QAtool/models.py
+END
+widgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/40/trunk/QAtool/widgets.py
+END

@@ -1,0 +1,40 @@
+{% include "head.html" %} 
+{% include "navigation.html" %}
+<div id="contentwidth"> 
+	<div id="st">
+		<h2>Suites:</h2>
+	<div id="info_text">We have {{suites|length}} suites</div>
+	{%for i in suites%}
+		{{i.name}} <!--a href="http://{{host}}/editstep/{{i.id}}">Edit</a--><br>
+	{%endfor%}
+	</div>
+	<div id="nd">
+		<h2>Cases:</h2>
+	<div id="info_text">We have {{cases|length}} cases </div>
+	{%for i in cases%}
+		{{i.name}} <!--a href="http://{{host}}/editcase/{{i.id}}">Edit</a--><br>
+	{%endfor%}
+	</div>
+	<script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+                $(".post").click(function() {
+                    var self = this;
+                    var post_title = $(this).html()
+                    var data = {"post_title":post_title};
+                    $.getJSON("/blog/json", data, function(data) {
+                        var text = data[0]["fields"]["text"]
+                        $("<div style='display:none'>" + text + "</div>").appendTo($(self)).fadeIn();
+                    });
+                });
+            });
+        </script>
+		 <ul>
+            {% for title in post_titles %}
+                <li class="post">{{ title }}</li>
+            {% endfor %}
+        </ul>
+	<!--div id="welcome_text">Welcome to the QA tool application</div>
+</div--> 
+</footer> 
+</body> 
+</html> 	

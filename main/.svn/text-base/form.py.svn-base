@@ -1,0 +1,42 @@
+from saqura_main.models import *
+from django import forms
+from saqura_main.widgets import Redactor
+
+class AddCase(forms.ModelForm):
+    class Meta:
+        model = Case
+        widgets = {
+            'step': Redactor(attrs={'cols': 80, 'rows': 20})
+        }
+
+class AddSuite(forms.ModelForm):
+    case = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, label="")
+    class Meta:
+        model = Suite
+
+
+
+class AddResult(forms.ModelForm):
+    class Meta:
+        model = Result
+
+class EditCase (forms.Form):
+    Priority = (
+        (0, 'Blocker'),
+        (1, 'High'),
+        (2, 'Medium'),
+        (3, 'Low'),
+    )
+
+    name = forms.CharField()
+    description = forms.CharField(widget=forms.Textarea)
+    priority = forms.ChoiceField(choices=Priority)
+    image = forms.URLField()
+    requirements = forms.URLField()
+    step = forms.CharField(widget=forms.Textarea)
+
+    class Meta:
+        model = Case
+        widgets = {
+            'step': Redactor(attrs={'cols': 80, 'rows': 20}),
+        }

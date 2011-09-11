@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/5/trunk/templates
+END
+moresuite.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/40/trunk/templates/moresuite.html
+END
+editcase.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/38/trunk/templates/editcase.html
+END
+addcase.html
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/40/trunk/templates/addcase.html
+END
+main.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/38/trunk/templates/main.html
+END
+edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/42/trunk/templates/edit.html
+END
+tasks.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/42/trunk/templates/tasks.html
+END
+addresult.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/38/trunk/templates/addresult.html
+END
+add.html
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/38/trunk/templates/add.html
+END
+info.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/40/trunk/templates/info.html
+END
+morecase.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/40/trunk/templates/morecase.html
+END
+addsuite.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/42/trunk/templates/addsuite.html
+END
+create.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/38/trunk/templates/create.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/44/trunk/templates/index.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/44/trunk/templates/login.html
+END
+addtask.html
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/38/trunk/templates/addtask.html
+END

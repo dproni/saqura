@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="main">
+    <form action="/addtask/" method="post">
+                    {% csrf_token %}
+                {{ form.as_p }}
+                <input type="hidden" name="boss_id" value="{{ user }}"/>
+                <input type="submit" name="submit" value="Submit" id="submit">
+            </form>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>{{ item.name }}</h2>
+    <p>Requirements link</p>
+	{{ item.requirements }}<br>
+    <p>Description</p>
+	{{ item.description }}<br>
+    <p>Image link</p>
+	{{ item.image }}<br>
+    <p>Priority</p>
+	{{ item.priority }} <br>
+    <p>Step</p>
+    {{ item.step|safe }} <br>
+{% endblock %}

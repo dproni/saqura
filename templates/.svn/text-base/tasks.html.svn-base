@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="main">
+	{% for task in tasks %}
+        <div id="task">
+
+            <span class="id">{{ task.id }} </span>
+            <span class="date">{{ task.modified|date:"d M Y G:i"}}</span>
+            <span class="name">{{ task.suite }} </span>
+            <span class="user">{{ task.user_assigned }} </span>
+            <span class="boss"> {{ task.boss}}  </span>
+            <span class="comments">{{ task.comments }}</span>
+            ! {{ task.suite.id }} !
+    	<form action="/task_process/" method="post">{%csrf_token%}
+            <input type='submit' name='start' value='Start work'>
+            {% if task.is_started == 1 %}
+			<input type='submit' name='stop' value='Stop work'>
+                      Task started
+            {% endif%}
+            <input type="hidden" name="task_id" value="{{ task.id }}"/>
+            <input type="hidden" name="suite_id" value="{{ task.suite.id }}"/>
+            <input type='submit' name='leave' value='Leave'>
+            <input type='submit' name='delete' value='Delete'>
+		</form>
+
+
+        </div><br>
+    {% endfor %}
+</div>
+{% endblock %}

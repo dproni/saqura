@@ -1,0 +1,15 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset=utf-8> 
+<title>{{ title }}</title> 
+<meta name="keywords" content="" /> 
+<meta name="description" content="" /> 
+ 
+<!--script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script--><!-- this is an external javascript allowing html5 to run in older browsers --> 
+<script type="text/javascript" src="/static/jquery.js"></script>
+<script type="text/javascript" src="/static/jquery.tablednd_0_5.js"></script>
+<script type="text/javascript" src="/static/table-dnd-example.js"></script>
+<link rel="stylesheet" href="/static/main.css" type="text/css" />
+</head> 

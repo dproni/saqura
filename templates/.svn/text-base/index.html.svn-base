@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>{{ title }}</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script--><!-- this is an external javascript allowing html5 to run in older browsers -->
+<script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
+<!--script type="text/javascript" src="/static/js/redactor/redactor.js"></script-->
+<script type="text/javascript" src="/static/js/jwysiwyg/jquery.wysiwyg.js"></script>
+<!--script type="text/javascript" src="/static/js/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="/static/js/markitup/sets/html/set.js"></script-->
+<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+<!--link rel="stylesheet" href="/static/js/redactor/css/redactor.css" type="text/css" /-->
+<!--link rel="stylesheet" href="/static/js/markitup/skins/simple/style.css" type="text/css" />
+<link rel="stylesheet" href="/static/js/markitup/sets/html/style.css" type="text/css" /-->
+<link rel="stylesheet" href="/static/js/jwysiwyg/jquery.wysiwyg.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="clear"></div>
+    <!-- Search form -->
+        <!-- <div id="search">
+			<form action="/search/" method="get">
+				<input type="text" name="q">
+				<input type="submit" value="Search">
+			</form>
+   		</div> -->
+    <!-- Search form -->
+    <!-- Top Navigation -->
+
+	<div id="topnavigation">
+        <!--div id="logo"></div-->
+        <!-- Logo -->
+        <a href="/" class="home">home</a>
+        <a href="/create/" class="add">create</a>
+        <a href="/edit/" class="edit">edit</a>
+        <a href="/charts/" class="charts">charts</a>
+        <a href="/info/" class="info">info</a>
+        <a href="/settings/" class="settings">settings</a>
+        {{ user.username }}
+	</div>
+    <!-- Top Navigation -->
+{% if user in users %}
+  If users is a QuerySet, this will appear if user is an
+  instance that belongs to the QuerySet.
+{% endif %}
+{#{% url %}#}
+{#{% now "jS F Y H:i" %}#}
+
+    <!-- Content -->
+<div id="content">
+{% block content %}
+
+{% endblock %}
+
+</footer>
+</body> 
+</html> 	

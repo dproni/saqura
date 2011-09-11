@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins
+END
+char.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/char.html
+END
+link.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/link.html
+END
+image.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/image.html
+END
+video.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/video.html
+END
+image_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/image_edit.html
+END
+table.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22/trunk/static/js/redactor/plugins/table.html
+END

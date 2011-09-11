@@ -1,0 +1,45 @@
+{% include "head.html" %}
+
+    <script type="text/javascript"> 
+	  $(document).ready(function(){
+ 		  $("#pass").click(function(event){
+		     alert("pass");
+ 		  });
+   		  $("#failed").click(function(event){
+		     alert("failed");
+ 		  });
+	 });
+    </script> 
+{% include "navigation.html" %}
+<div id="main">
+	<div id="fixForstepsTable"> 
+		
+    <h2>Test cases</h2> 
+	<div id="info_text">We have {{cases|length}} testcases </div>
+		<div id="cases">
+			{%for i in suites%}
+			 <div id="space"></div><a href="http://{{host}}/suite/{{suite.id}}/case/{{i.id}}/">{{i.name}}</a><br>
+			{%endfor%}
+		</div>
+	</div>
+	<div id="steps">
+	    <h2>{{case.name}}</h2>  
+		<div id="info_text">{{case.description}}</div>
+		<table id="table">
+		{{case.step}}
+	    </table> 
+	</div>
+</div>
+	<div id="result">
+		<!--form action="/result/" method="post">{%csrf_token%}
+			<input type="submit" value="Pass">
+			<input type="submit" value="Failed">
+			<input type="submit" value="N/A">
+			<input type="submit" value="Postponed">
+		</form-->
+		{{ form.as_p }} 
+	</div>
+<footer> 
+</footer> 
+</body> 
+</html> 	

@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Suites:</h2>
+	<div id="info_text">We have {{suites|length}} suites</div>
+	{%for i in suites%}
+		 <a href="/suite/{{i.id}}">{{i.name}}</a> <a href="/editsuite/{{i.id}}">edit</a><br>
+	{%endfor%}
+
+		<h2>Cases:</h2>
+	<div id="info_text">We have {{cases|length}} cases </div>
+	{%for i in cases%}
+		<a href="/case/{{i.id}}">{{i.name}}</a> <a href="/editcase/{{i.id}}">edit</a><br>
+	{%endfor%}
+{% if form.errors %}
+    <p class="error">Сожалеем, вы неправильно ввели логин или пароль</p>
+  {% endif %}
+{% if not user.is_authenticated %}
+  <form action='/login/' method='post'>
+    <label for="username">Логин:</label>
+    <input type="text" name="username" value="" id="username">
+    <label for="password">Пароль:</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+  </form>
+{% endif %}
+</div>
+{% endblock %}
