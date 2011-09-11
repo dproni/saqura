@@ -27,13 +27,13 @@ class Case(models.Model):
                         ('Medium', 'Medium'),
                         ('Low', 'Low'),
                 )
-    name = models.CharField(max_length=200)
-    image = models.URLField(blank=True)
+    name        = models.CharField(max_length=200)
+    image       = models.URLField(blank=True)
     requirements = models.URLField(blank=True)
-    priority = models.CharField(max_length=10, choices=Priority)
+    priority    = models.CharField(max_length=10, choices=Priority)
     description = models.CharField(max_length=200)
-    step = models.TextField()
-    modified = models.DateTimeField(editable=False)
+    step        = models.TextField()
+    modified    = models.DateTimeField(editable=False)
     
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
@@ -46,10 +46,10 @@ class Case(models.Model):
         return self.description
 
 class Suite (models.Model):
-    name = models.CharField(max_length=200)
-    features=models.TextField()
-    modified = models.DateTimeField(editable=False, null=True)
-    cases = models.ManyToManyField(Case, null=True, blank=True)
+    name        = models.CharField(max_length=200)
+    features    = models.TextField()
+    modified    = models.DateTimeField(editable=False, null=True)
+    cases       = models.ManyToManyField(Case, null=True)
 
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
@@ -62,18 +62,20 @@ class Suite (models.Model):
         return self.description
 
 class Run (models.Model):
-    is_active = models.BooleanField()
-    modified = models.DateTimeField(editable=False)
-    user = models.CharField(max_length=10, null=True)
+    is_active   = models.BooleanField()
+    modified    = models.DateTimeField(editable=False)
+    user        = models.CharField(max_length=10, null=True)
+    cases       = models.ManyToManyField(Case, null=True)
+    suites      = models.ManyToManyField(Suite, null=True)
 
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
         if not self.id:
             self.modified = datetime.datetime.today()
-        super(Jobs, self).save(*args, **kwargs)
+        super(Run, self).save(*args, **kwargs)
 
     def __unicode__(self):
-        return self.name
+        return self.user
 
         
 class Result (models.Model):
@@ -84,11 +86,11 @@ class Result (models.Model):
                         ('Postponed', 'Postponed'),
                         ('Issue', 'Issue1'),
             )
-    result = models.CharField(max_length=10, choices=results, null=True)
-    case = models.ForeignKey(Case, null=True)
-    suite = models.ForeignKey(Suite, null=True)
-    job = models.ForeignKey(Jobs, null=True)
-    modified = models.DateTimeField(editable=False)
+    result      = models.CharField(max_length=10, choices=results, null=True)
+    case        = models.ForeignKey(Case, null=True)
+    suite       = models.ForeignKey(Suite, null=True)
+    run         = models.ForeignKey(Run, null=True)
+    modified    = models.DateTimeField(editable=False)
     
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
