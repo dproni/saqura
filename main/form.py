@@ -23,6 +23,7 @@ class AddSuite(forms.ModelForm):
             'features': forms.Textarea(attrs={'class':'features'})
         }
 
+
 class EditSuite(forms.ModelForm):
     class Meta:
         model = Suite
