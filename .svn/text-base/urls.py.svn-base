@@ -1,0 +1,35 @@
+from django.conf.urls.defaults import *
+#from saqura.saqura_main.views import *
+from saqura_main.views import *
+from django.conf import settings
+from django.contrib import admin
+admin.autodiscover()
+
+
+#from django.conf.urls.defaults import *
+
+urlpatterns = patterns('',
+    (r'^tinymce/', include('tinymce.urls')),
+    #(r'^result/', 'QA.saqura_main.views.result'),
+    (r'^login_in/$',  'saqura.saqura_main.views.login_page'),
+    (r'^login/$',  'saqura.saqura_main.views.login'),
+    (r'^logout/$', 'saqura.saqura_main.views.logout'),
+    (r'^meta/', 'saqura.saqura_main.views.display_meta'),
+    (r'^search/', 'saqura.saqura_main.views.search'),
+    (r'^main/', 'saqura.saqura_main.views.main'),
+    (r'^grappelli/', include('grappelli.urls')),
+    (r'^$', 'saqura.saqura_main.views.index'),
+    (r'^pass/(\d{1,8})/suite/(\d{1,8})/case/(\d{1,8})/', 'saqura.saqura_main.views.execute'),
+    (r'^editcase/(\d{1,8})/', 'saqura.saqura_main.views.edit_case'),
+    (r'^editsuite/(\d{1,8})/', 'saqura.saqura_main.views.edit_suite'),
+    (r'^create/', 'saqura.saqura_main.views.create'),
+    (r'^info/', 'saqura.saqura_main.views.info'),
+    (r'^case/(\d{1,8})/', 'saqura.saqura_main.views.show_case'),
+    (r'^suite/(\d{1,8})/', 'saqura.saqura_main.views.show_suite'),
+    (r'^edit/', 'saqura.saqura_main.views.edit'),
+    (r'^addcase/', 'saqura.saqura_main.views.add_Case'),
+    (r'^addsuite/', 'saqura.saqura_main.views.add_Suite'),
+    (r'^addresult/', 'saqura.saqura_main.views.add_Result'),
+    (r'^admin/', include(admin.site.urls)),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    )
