@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response, get_list_or_404, HttpResponse, 
 from django.core.context_processors import csrf
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-from main.models import Case, Suite, Jobs, Result
+from main.models import *
 from main.form import *
 import datetime
 
@@ -256,7 +256,7 @@ def search(request):
         message = 'You sucks'
     return HttpResponse(message)
 
-def edit_case (request, case_id):
+def editCase (request, case_id):
     case = Case.objects.get(id=case_id)
     name = case.name
     description = case.description
@@ -293,7 +293,7 @@ def edit_case (request, case_id):
         'case': case,
     })
 
-def edit_suite (request, suite_id):
+def editSuite (request, suite_id):
     suite = Suite.objects.get(id=suite_id)
     name = suite.name
     features = suite.features
@@ -303,18 +303,21 @@ def edit_suite (request, suite_id):
     if request.method == 'POST': # If the form has been submitted...
         form = EditSuite(data = request.POST) # A form bound to the POST data
         if form.is_valid():
-            suite = Suite(
-                        name        =   form.cleaned_data['name'],
-                        features    =   form.cleaned_data['features'],
+#            suite = Suite(
+#                        name        =   form.cleaned_data['name'],
+#                        features    =   form.cleaned_data['features'],
 #                        cases       =   form.cleaned_data['cases'],
-                        )
+#                        )
 #            suite.save()
+            form.save()
     else:
         form = EditSuite(initial={'name': name, 'features': features}) # An unbound form
-#        form.fields["name"].queryset = Suite.objects.get(id=suite_id).name
+#        form = EditSuite(instance = Suite) # An unbound form
+
 
 
     return render_to_response('editsuite.html', {
         'form': form,
         'suite': suite,
+        'cases' : cases
     })
