@@ -27,6 +27,7 @@ class Case(models.Model):
                         ('Medium', 'Medium'),
                         ('Low', 'Low'),
                 )
+    id          = models.AutoField(primary_key=True)
     name        = models.CharField(max_length=200)
     image       = models.URLField(blank=True)
     requirements = models.URLField(blank=True)
@@ -34,6 +35,7 @@ class Case(models.Model):
     description = models.CharField(max_length=200)
     step        = models.TextField()
     modified    = models.DateTimeField(editable=False)
+    user        = models.ForeignKey(User, editable=False)
     
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
@@ -46,10 +48,12 @@ class Case(models.Model):
         return self.description
 
 class Suite (models.Model):
+    id          = models.AutoField(primary_key=True)
     name        = models.CharField(max_length=200)
     features    = models.TextField()
     modified    = models.DateTimeField(editable=False, null=True)
     cases       = models.ManyToManyField(Case, null=True)
+    user        = models.ForeignKey(User, editable=False)
 
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
@@ -64,7 +68,7 @@ class Suite (models.Model):
 class Run (models.Model):
     is_active   = models.BooleanField()
     modified    = models.DateTimeField(editable=False)
-    user        = models.CharField(max_length=10, null=True)
+    user        = models.ForeignKey(User, null=True)
     cases       = models.ManyToManyField(Case, null=True)
     suites      = models.ManyToManyField(Suite, null=True)
 

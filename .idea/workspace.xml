@@ -4,12 +4,8 @@
     <list default="true" readonly="true" id="3abc3727-b29c-47a2-9382-6bcdca45c630" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saqura.db" afterPath="$PROJECT_DIR$/saqura.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/admin.py" afterPath="$PROJECT_DIR$/main/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/form.py" afterPath="$PROJECT_DIR$/main/form.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editcase.html" afterPath="$PROJECT_DIR$/templates/editcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editsuite.html" afterPath="$PROJECT_DIR$/templates/editsuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
     </list>
     <ignored path="saqura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +30,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.46837607">
       <split-first>
         <leaf>
-          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="0" selection-start="1948" selection-end="2002" vertical-scroll-proportion="0.0">
+                <state line="58" column="34" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.7837838">
                   <folding />
                 </state>
               </provider>
@@ -88,10 +84,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="form.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="form.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main/form.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.21621622">
+                <state line="30" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -149,22 +145,13 @@
           <file leaf-file-name="addsuite.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="32" selection-start="110" selection-end="120" vertical-scroll-proportion="-2.857143">
+                <state line="12" column="14" selection-start="340" selection-end="340" vertical-scroll-proportion="-6.857143">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="313" column="68" selection-start="13037" selection-end="13037" vertical-scroll-proportion="-11.461538">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main/admin.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
@@ -177,6 +164,15 @@
             <entry file="file://$PROJECT_DIR$/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="24" column="66" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="327" column="20" selection-start="13096" selection-end="13096" vertical-scroll-proportion="0.8918919">
                   <folding />
                 </state>
               </provider>
@@ -207,13 +203,13 @@
         <option value="$PROJECT_DIR$/saqura_main/form.py" />
         <option value="$PROJECT_DIR$/saqura_main/views.py" />
         <option value="$PROJECT_DIR$/main/tests.py" />
-        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/templates/addrun.html" />
         <option value="$PROJECT_DIR$/main/form.py" />
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/templates/editsuite.html" />
+        <option value="$PROJECT_DIR$/main/models.py" />
       </list>
     </option>
   </component>
@@ -1404,23 +1400,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1948" selection-end="2002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="110" selection-end="120" vertical-scroll-proportion="-2.857143">
           <folding />
         </state>
       </provider>
@@ -1474,13 +1456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="68" selection-start="13037" selection-end="13037" vertical-scroll-proportion="-11.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
@@ -1490,7 +1465,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.21621622">
+        <state line="30" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="340" selection-end="340" vertical-scroll-proportion="-6.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="327" column="20" selection-start="13096" selection-end="13096" vertical-scroll-proportion="0.8918919">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="34" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.7837838">
           <folding />
         </state>
       </provider>

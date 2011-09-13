@@ -27,19 +27,18 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    # Перенаправление на страницу.
     return HttpResponseRedirect('/')
 
 def addCase(request):
     c = {}
     c.update(csrf(request))
     user = auth.get_user(request)
-    if request.method == 'POST': # If the form has been submitted...
-        form = AddCase(data = request.POST) # A form bound to the POST data
+    if request.method == 'POST': 
+        form = AddCase(data = request.POST) 
         if form.is_valid():
             form.save()
     else:
-        form = AddCase() # An unbound form
+        form = AddCase() 
 
     return render_to_response('addcase.html', {
                                                     'form': form,
@@ -52,11 +51,11 @@ def addSuite(request):
     c.update(csrf(request))
     user = auth.get_user(request)
     if request.method == 'POST': # If the form has been submitted...
-        form = AddSuite(data = request.POST) # A form bound to the POST data
+        form = AddSuite(data = request.POST) 
         if form.is_valid():
             form.save()
     else:
-        form = AddSuite() # An unbound form
+        form = AddSuite() 
 
     return render_to_response('addsuite.html', {
                                                     'form': form,
@@ -69,11 +68,11 @@ def addResult(request):
     c.update(csrf(request))
     user = auth.get_user(request)
     if request.method == 'POST': # If the form has been submitted...
-        form = AddResult(data = request.POST) # A form bound to the POST data
+        form = AddResult(data = request.POST) 
         if form.is_valid():
             form.save()
     else:
-        form = AddResult() # An unbound form
+        form = AddResult() 
 
     return render_to_response('addresult.html', {
                                                     'form': form,
@@ -87,11 +86,11 @@ def addRun(request):
     c.update(csrf(request))
     user = auth.get_user(request)
     if request.method == 'POST': # If the form has been submitted...
-        form = AddResult(data = request.POST) # A form bound to the POST data
+        form = AddResult(data = request.POST) 
         if form.is_valid():
             form.save()
     else:
-        form = AddResult() # An unbound form
+        form = AddResult() 
 
     return render_to_response('addrun.html', {
                                                     'form': form,
@@ -267,17 +266,17 @@ def editCase (request, case_id):
     c = {}
     c.update(csrf(request))
     if request.method == 'POST': # If the form has been submitted...
-        form = EditCase(data = request.POST) # A form bound to the POST data
+        form = EditCase(data = request.POST) 
         if form.is_valid():
             case = Case(
-                        id          =   case_id,
-                        modified    =   datetime.datetime.today(),
-                        name        =   form.cleaned_data['name'],
-                        description =   form.cleaned_data['description'],
-                        priority    =   form.cleaned_data['priority'],
-                        image       =   form.cleaned_data['image'],
-                        requirements=   form.cleaned_data['requirements'],
-                        step        =   form.cleaned_data['step']
+                        id          = case_id,
+                        modified    = datetime.datetime.today(),
+                        name        = form.cleaned_data['name'],
+                        description = form.cleaned_data['description'],
+                        priority    = form.cleaned_data['priority'],
+                        image       = form.cleaned_data['image'],
+                        requirements= form.cleaned_data['requirements'],
+                        step        = form.cleaned_data['step']
                         )
             case.save()
     else:
@@ -286,7 +285,7 @@ def editCase (request, case_id):
                                  'priority': priority,
                                  'image': image,
                                  'requirements': requirements,
-                                 'step': step,}) # An unbound form
+                                 'step': step,}) 
 
     return render_to_response('editcase.html', {
         'form': form,
@@ -301,23 +300,30 @@ def editSuite (request, suite_id):
     c = {}
     c.update(csrf(request))
     if request.method == 'POST': # If the form has been submitted...
-        form = EditSuite(data = request.POST) # A form bound to the POST data
+        form = EditSuite(data = request.POST) 
         if form.is_valid():
-#            suite = Suite(
-#                        name        =   form.cleaned_data['name'],
-#                        features    =   form.cleaned_data['features'],
-#                        cases       =   form.cleaned_data['cases'],
-#                        )
-#            suite.save()
-            form.save()
+            suite = Suite(
+                        id        = suite_id,
+                        name      = form.cleaned_data['name'],
+                        features  = form.cleaned_data['features'],
+                        cases     = request.POST.getlist('cases')
+                        )
+            suite.save()
+#            form.save()
     else:
-        form = EditSuite(initial={'name': name, 'features': features}) # An unbound form
-#        form = EditSuite(instance = Suite) # An unbound form
+#        a = Case.objects.get(suite = suite_id)
+#        initialValues =  {
+#                            'name'      : name,
+#                            'features'  : features,
+#                            'cases'     : a
+#                        }
+#        form = EditSuite(initialValues)
+        form = EditSuite(instance = suite)
 
 
 
     return render_to_response('editsuite.html', {
         'form': form,
         'suite': suite,
-        'cases' : cases
+#        'cases' : a
     })
