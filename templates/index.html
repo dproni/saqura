@@ -42,44 +42,34 @@
 
     <ul id="nav-one" class="nav">
                 <li>
-                    <a href="/info/">info</a>
+                    <a href="{% url main.views.info %}">info</a>
                     <ul>
-                        <li><a href="/info/"">info</a></li>
-                        <li><a href="/home/">home</a></li>
-                        <li><a href="#item1.3">item 1.3</a></li>
-                        <li><a href="#item1.4">item 1.4</a></li>
+                        <li><a href="{% url main.views.info %}"">info</a></li>
+                        <li><a href="{% url main.views.index %}">home</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="/create/">create</a>
                     <ul>
-                        <li><a href="/addsuite/" >Add Test Suite</a></li>
-                        <li><a href="/addcase/" >Add Test Case</a></li>
-                        <!--li><a href="/addtask/" >Add Task</a></li>
-                        <li><a href="/adduser/" >Add User</a></li-->
+                        <li><a href="{% url main.views.addSuite %}" >Add Test Suite</a></li>
+                        <li><a href="{% url main.views.addCase %}" >Add Test Case</a></li>
+                        <li><a href="{% url main.views.addRun %}" >Add Run</a></li>
+                        <li><a href="{% url main.views.addUser %}" >Add User</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="/edit/">edit</a>
                     <ul>
-                        <li><a href="#item3.1">item 3.1</a></li>
-                        <li><a href="#item3.2">item 3.2</a></li>
+                        <li><a href="{% url main.views.editAbilities %}" >Edit abilities</a></li>
+                        <li><a href="#">tbd</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/charts/">charts</a>
+                    <a href="{% url main.views.addRun %}">execute</a>
                     <ul>
-                        <li><a href="#item4.1">item 4.1</a></li>
-                        <li><a href="#item4.2">item 4.2</a></li>
-                        <li><a href="#item4.3">item 4.3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/main/">execute</a>
-                    <ul>
-                        <li><a href="#item4.1">item 4.1</a></li>
-                        <li><a href="#item4.2">item 4.2</a></li>
-                        <li><a href="#item4.3">item 4.3</a></li>
+                        <li><a href="#item4.1">tbd</a></li>
+                        <li><a href="#item4.2">tbd</a></li>
+                        <li><a href="#item4.3">tbd</a></li>
                     </ul>
                 </li>
                  <li>

@@ -42,6 +42,17 @@ class AddRun(forms.ModelForm):
     class Meta:
         model = Run
 
+
+class AbilitiesForm(forms.ModelForm):
+    class Meta:
+        model = Abilities
+
+class AddUser(forms.ModelForm):
+    abilities   =   forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Abilities.objects.all())
+    class Meta:
+        model   =   UserProfile
+
+
 class EditCase (forms.ModelForm):
     class Meta:
         model = Case

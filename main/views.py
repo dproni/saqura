@@ -36,7 +36,10 @@ def addCase(request):
     if request.method == 'POST': 
         form = AddCase(data = request.POST) 
         if form.is_valid():
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
     else:
         form = AddCase() 
 
@@ -53,7 +56,11 @@ def addSuite(request):
     if request.method == 'POST': # If the form has been submitted...
         form = AddSuite(data = request.POST) 
         if form.is_valid():
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            cases = request.POST.getlist('cases')
+            obj.save()
+            form.save_m2m()
     else:
         form = AddSuite() 
 
@@ -80,6 +87,24 @@ def addResult(request):
                                                     'host' : request.get_host(),
                                                     'user' : user
                                                 })
+def addUser(request):
+    c = {}
+    c.update(csrf(request))
+    user = auth.get_user(request)
+    if request.method == 'POST': # If the form has been submitted...
+        form = AddUser(data = request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = AddUser()
+
+    return render_to_response('adduser.html', {
+                                                    'form': form,
+                                                    'js': c.items(),
+                                                    'host' : request.get_host(),
+                                                    'user' : user
+                                                })
+
 
 def addRun(request):
     c = {}
@@ -118,6 +143,11 @@ def create (request):
                                             'title': title,
                                             })
 
+def edit (request):
+    title = 'Welcome to main application'
+    return render_to_response('edit.html',{
+                                            'title': title,
+                                            })
 #@login_required
 def info (request):
     title = 'Welcome to main application'
@@ -255,6 +285,22 @@ def search(request):
         message = 'You sucks'
     return HttpResponse(message)
 
+
+def editAbilities (request):
+    abilities = Abilities.objects.all()
+    c = {}
+    c.update(csrf(request))
+    if request.method == 'POST': # If the form has been submitted...
+        form = AbilitiesForm(data = request.POST)
+        if form.is_valid():
+           pass
+    else:
+        form = AbilitiesForm(instance = abilities        )
+        
+    return render_to_response('abilities.html', {
+        'form': form,
+    })
+
 def editCase (request, case_id):
     case = Case.objects.get(id=case_id)
     name = case.name
@@ -300,28 +346,17 @@ def editSuite (request, suite_id):
     c = {}
     c.update(csrf(request))
     if request.method == 'POST': # If the form has been submitted...
-        form = EditSuite(data = request.POST) 
+#        form = EditSuite(data = request.POST)
+        form = EditSuite(request.POST, instance = suite)
         if form.is_valid():
-            suite = Suite(
-                        id        = suite_id,
-                        name      = form.cleaned_data['name'],
-                        features  = form.cleaned_data['features'],
-                        cases     = request.POST.getlist('cases')
-                        )
-            suite.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            cases = request.POST.getlist('cases')
+            obj.save()
+            form.save_m2m()
 #            form.save()
     else:
-#        a = Case.objects.get(suite = suite_id)
-#        initialValues =  {
-#                            'name'      : name,
-#                            'features'  : features,
-#                            'cases'     : a
-#                        }
-#        form = EditSuite(initialValues)
         form = EditSuite(instance = suite)
-
-
-
     return render_to_response('editsuite.html', {
         'form': form,
         'suite': suite,
