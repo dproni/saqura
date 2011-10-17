@@ -1,30 +1,63 @@
 {% extends "index.html" %}
 
 {% block content %}
-<h2>Suites:</h2>
-	<div id="info_text">We have {{suites|length}} suites</div>
-	{%for i in suites%}
-		 <a href="/suite/{{i.id}}">{{i.name}}</a> <a href="/editsuite/{{i.id}}">edit</a><br>
-	{%endfor%}
+<div class="content">
+    <div class="row">
+        <div class="span3">
+            <h2>Suites</h2>
 
-		<h2>Cases:</h2>
-	<div id="info_text">We have {{cases|length}} cases </div>
-	{%for i in cases%}
-		<a href="/case/{{i.id}}">{{i.name}}</a> <a href="/editcase/{{i.id}}">edit</a><br>
-	{%endfor%}
-{% if form.errors %}
-    <p class="error">Сожалеем, вы неправильно ввели логин или пароль</p>
-  {% endif %}
-{% if not user.is_authenticated %}
-  <form action='/login/' method='post'>
-    <label for="username">Логин:</label>
-    <input type="text" name="username" value="" id="username">
-    <label for="password">Пароль:</label>
-    <input type="password" name="password" value="" id="password">
+            <div id="info_text">We have {{ suites|length }} suites</div>
+            {% for i in suites %}
+                <a href="/suite/{{i.id}}">{{ i.name }}</a> <a href="/editsuite/{{i.id}}">edit</a><br>
+            {% endfor %}
+        </div>
+        <div class="span3">
+            <h2>Cases</h2>
 
-    <input type="submit" value="login" />
-    <input type="hidden" name="next" value="{{ next|escape }}" />
-  </form>
-{% endif %}
-</div>
+            <div id="info_text">We have {{ cases|length }} cases</div>
+            {% for i in cases %}
+                <a href="/case/{{i.id}}">{{ i.name }}</a> <a href="/editcase/{{i.id}}">edit</a><br>
+            {% endfor %}
+        </div>
+        <div class="span3">
+            <h2>Case Types</h2>
+
+            <div id="info_text">We have {{ caseTypes|length }} Case Types</div>
+            {% for i in caseTypes %}
+                {{ i.name }}<br>
+            {% endfor %}
+        </div>
+        <div class="span3">
+            <h2>Builds</h2>
+
+            <div id="info_text">We have {{ builds|length }} builds</div>
+            {% for i in builds %}
+                {{ i.build }}<br>
+            {% endfor %}
+        </div>
+        <div class="span3">
+            <h2>Runs</h2>
+
+            <div id="info_text">We have {{ runs|length }} runs</div>
+            {% for i in runs %}
+                {{ i.id }}<br>
+            {% endfor %}
+        </div>
+
+    </div>
+    {##}
+    {#{% if form.errors %}#}
+    {#    <p class="error">Сожалеем, вы неправильно ввели логин или пароль</p>#}
+    {#  {% endif %}#}
+    {#{% if not user.is_authenticated %}#}
+    {#  <form action='/login/' method='post'>#}
+    {#    <label for="username">Логин:</label>#}
+    {#    <input type="text" name="username" value="" id="username">#}
+    {#    <label for="password">Пароль:</label>#}
+    {#    <input type="password" name="password" value="" id="password">#}
+    {##}
+    {#    <input type="submit" value="login" />#}
+    {#    <input type="hidden" name="next" value="{{ next|escape }}" />#}
+    {#  </form>#}
+    {#{% endif %}#}
 {% endblock %}

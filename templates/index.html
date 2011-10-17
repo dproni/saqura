@@ -6,111 +6,72 @@
 <title>{{ title }}</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script--><!-- this is an external javascript allowing html5 to run in older browsers -->
-<script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
+<meta name="author" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/static/js/redactor/redactor.js"></script>
-<!--script type="text/javascript" src="/static/js/jwysiwyg/jquery.wysiwyg.js"></script-->
-<!--script type="text/javascript" src="/static/js/markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="/static/js/markitup/sets/html/set.js"></script-->
-<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css" />
+<script type="text/javascript" src="/static/js/bootstrap-tabs.js"></script>
+<script type="text/javascript" src="/static/js/application.js"></script>
 <link rel="stylesheet" href="/static/js/redactor/css/redactor.css" type="text/css" />
-<!--link rel="stylesheet" href="/static/js/markitup/skins/simple/style.css" type="text/css" />
-<link rel="stylesheet" href="/static/js/markitup/sets/html/style.css" type="text/css" /-->
-<!--link rel="stylesheet" href="/static/js/jwysiwyg/jquery.wysiwyg.css" type="text/css" /-->
-
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+      }
+    </style>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 
 <body>
-    <div class="clear"></div>
-    <!-- Search form -->
-        <!-- <div id="search">
-			<form action="/search/" method="get">
-				<input type="text" name="q">
-				<input type="submit" value="Search">
-			</form>
-   		</div> -->
-    <!-- Search form -->
-    <!-- Top Navigation -->
-
-	<div id="topnavigation">
-        <!--a href="/" class="home">home</a>
-        <a href="/create/" class="add">create</a>
-        <a href="/edit/" class="edit">edit</a>
-        <a href="/charts/" class="charts">charts</a>
-        <a href="/info/" class="info">info</a>
-        <a href="/settings/" class="settings">settings</a-->
-
-    <ul id="nav-one" class="nav">
-                <li>
-                    <a href="{% url main.views.info %}">info</a>
-                    <ul>
-                        <li><a href="{% url main.views.info %}"">info</a></li>
-                        <li><a href="{% url main.views.index %}">home</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/create/">create</a>
-                    <ul>
-                        <li><a href="{% url main.views.addSuite %}" >Add Test Suite</a></li>
-                        <li><a href="{% url main.views.addCase %}" >Add Test Case</a></li>
-                        <li><a href="{% url main.views.addRun %}" >Add Run</a></li>
-                        <li><a href="{% url main.views.addUser %}" >Add User</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/edit/">edit</a>
-                    <ul>
-                        <li><a href="{% url main.views.editAbilities %}" >Edit abilities</a></li>
-                        <li><a href="#">tbd</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="{% url main.views.addRun %}">execute</a>
-                    <ul>
-                        <li><a href="#item4.1">tbd</a></li>
-                        <li><a href="#item4.2">tbd</a></li>
-                        <li><a href="#item4.3">tbd</a></li>
-                    </ul>
-                </li>
-                 <li>
-                     <a href="#">{{ user.username }}</a>
-                </li>
-            </ul>
+    <div class="topbar">
+      <div class="topbar-inner" data-dropdown="dropdown">
+        <div class="container-fluid">
+          <a class="brand" href="#">saQurA</a>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="{% url main.views.info %}">Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url main.views.execute %}">Execute</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="{% url main.views.create %}" class="dropdown-toggle">Create</a>
+              <ul class="dropdown-menu">
+                  <li><a href="{% url main.views.addSuite %}" >Test Suite</a></li>
+                  <li><a href="{% url main.views.addCase %}" >Test Case</a></li>
+                  <li><a href="{% url main.views.addCaseType %}" >Case Type</a></li>
+                  <li><a href="{% url main.views.addRun %}" >Run</a></li>
+                  <li><a href="{% url main.views.addUser %}" >User</a></li>
+                  <li><a href="{% url main.views.addBuild %}" >Build</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="{% url main.views.create %}" class="dropdown-toggle">Edit</a>
+              <ul class="dropdown-menu">
+                  <li><a href="{% url main.views.editAbilities %}" >Edit abilities</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="pull-right">{% now "jS F Y H:i:s" %}</p>
+          <p class="pull-right"><a href="#">{{ user.username }}</a></p>
+        </div>
+      </div>
     </div>
-	<script type="text/javascript">
-	  $(document).ready(function(){
-			$("#nav-one li").hover(
-				function(){ $("ul", this).fadeIn("fast"); },
-				function() { }
-			);
-	  	if (document.all) {
-				$("#nav-one li").hoverClass ("sfHover");
-			}
-	  });
-
-		$.fn.hoverClass = function(c) {
-			return this.each(function(){
-				$(this).hover(
-					function() { $(this).addClass(c);  },
-					function() { $(this).removeClass(c); }
-				);
-			});
-		};
-	</script> 
-    <!-- Top Navigation -->
-{#{% if user in users %}#}
-{#  If users is a QuerySet, this will appear if user is an#}
-{#  instance that belongs to the QuerySet.#}
-{#{% endif %}#}
-{#{% url %}#}
-{#{% now "jS F Y H:i" %}#}
-
-    <!-- Content -->
-<div id="content">
+<div class="container-fluid">
 {% block content %}
 
 {% endblock %}
-
-</footer>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+</div>
 </body> 
 </html> 	

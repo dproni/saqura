@@ -64,14 +64,20 @@ SECRET_KEY = '*p(tdi-(w+8sjjl(9e8b8&57abdh(tmp$*$xt!0@68#_re-5u$'
 MIDDLEWARE_CLASSES = (
 'django.middleware.common.CommonMiddleware',
 'django.contrib.sessions.middleware.SessionMiddleware',
-'django.middleware.csrf.CsrfViewMiddleware',
 'django.middleware.csrf.CsrfResponseMiddleware',
-'django.middleware.common.CommonMiddleware',
 'django.contrib.auth.middleware.AuthenticationMiddleware',
 'django.contrib.messages.middleware.MessageMiddleware',
 'django.middleware.csrf.CsrfMiddleware',
 'django.middleware.csrf.CsrfViewMiddleware',
-'django.middleware.csrf.CsrfResponseMiddleware',
+
+
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.csrf.CsrfMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.csrf.CsrfResponseMiddleware',
 )
 
 TEMPLATE_LOADERS = (

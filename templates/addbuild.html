@@ -1,16 +1,16 @@
 {% extends "index.html" %}
 
 {% block content %}
-<div class="content">
-<div class="row">
-    <div class="span16">
-        <div class="inputs-list">
-        <form action="{% url main.views.addCase %}" method="post">
+
+    <div class="row">
+        <div class="span16">
+                <form action="{% url main.views.addBuild %}" method="post">
                     {% csrf_token %}
                 {{ form.as_p }}
+                <input type="hidden" name="boss_id" value="{{ user }}"/>
                 <input type="submit" class="btn primary" value="Submit">
+                
             </form>
-        </div>
     </div>
 </div>
 {% endblock %}

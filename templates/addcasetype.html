@@ -4,13 +4,15 @@
 <div class="content">
 <div class="row">
     <div class="span16">
+        <form>
         <div class="inputs-list">
-        <form action="{% url main.views.addCase %}" method="post">
+        <form action="{% url main.views.addCaseType %}" method="post">
                     {% csrf_token %}
                 {{ form.as_p }}
                 <input type="submit" class="btn primary" value="Submit">
             </form>
         </div>
+        </form>
     </div>
 </div>
 {% endblock %}

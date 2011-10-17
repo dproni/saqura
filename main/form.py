@@ -3,44 +3,36 @@ from main.models import *
 from main.widgets import Redactor
 
 class AddCase(forms.ModelForm):
+    caseType=forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=CaseType.objects.all(), required=False)
     class Meta:
         model = Case
-        widgets = {
-            'image': forms.TextInput(attrs={'class':'image'}),
-            'requirements': forms.TextInput(attrs={'class':'requirements'}),
-            'description': forms.TextInput(attrs={'class':'description'}),
-            'name': forms.TextInput(attrs={'class':'name'}),
-            'step': Redactor(attrs={'cols': 85, 'rows': 20})
-        }
 
 class AddSuite(forms.ModelForm):
     cases=forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Case.objects.all(), required=False)
     class Meta:
         model = Suite
-        widgets = {
-            'cases': CheckboxSelectMultiple(attrs={'class':'cases'}),
-            'name': forms.TextInput(attrs={'class':'name'}),
-            'features': forms.Textarea(attrs={'class':'features'})
-        }
 
+class AddCaseType(forms.ModelForm):
+    class Meta:
+        model = CaseType
 
 class EditSuite(forms.ModelForm):
     cases=forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Case.objects.all(), required=False)
     class Meta:
         model = Suite
-        widgets = {
-            'cases': CheckboxSelectMultiple(attrs={'class':'cases'}),
-            'name': forms.TextInput(attrs={'class':'name'}),
-            'features': forms.Textarea(attrs={'class':'features'})
-        }
 
 class AddResult(forms.ModelForm):
     class Meta:
         model = Result
 
-class AddRun(forms.ModelForm):
+class AddBuild(forms.ModelForm):
     class Meta:
-        model = Run
+        model = Build
+
+class AddTestRun(forms.ModelForm):
+#    suites=forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Suite.objects.all(), required=False)
+    class Meta:
+        model = TestRun
 
 
 class AbilitiesForm(forms.ModelForm):
@@ -54,12 +46,25 @@ class AddUser(forms.ModelForm):
 
 
 class EditCase (forms.ModelForm):
+    caseType=forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=CaseType.objects.all(), required=False)
     class Meta:
         model = Case
-        widgets = {
-            'image': forms.TextInput(attrs={'class':'image'}),
-            'requirements': forms.TextInput(attrs={'class':'requirements'}),
-            'description': forms.TextInput(attrs={'class':'description'}),
-            'name': forms.TextInput(attrs={'class':'name'}),
-            'step': Redactor(attrs={'cols': 80, 'rows': 20}),
-        }
+#        widgets = {
+#            'image': forms.TextInput(attrs={'class':'image'}),
+#            'requirements': forms.TextInput(attrs={'class':'requirements'}),
+#            'description': forms.TextInput(attrs={'class':'description'}),
+#            'name': forms.TextInput(attrs={'class':'name'}),
+#            'step': Redactor(attrs={'cols': 80, 'rows': 20}),
+#        }
+
+
+class SuiteEdit(forms.Form):
+    suiteName = forms.CharField(max_length=100)
+
+
+
+# TEST
+
+
+class ContactForm(forms.Form):
+    subject = forms.CharField(max_length=100)

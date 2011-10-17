@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="main">
+    <form action="/test/" method="post">
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.subject.errors }}
+        <label for="id_subject">Email subject:</label>
+        {{ form.subject }}
+    </div>
+    {{ testValue }}
+    <p><input type="submit" value="Send message" /></p>
+</form>
+</div>
+{% endblock %}

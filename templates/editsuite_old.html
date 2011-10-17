@@ -15,6 +15,12 @@
     <div class="content">
         <div class="row">
             <div class="span16">
+                <ul class="tabs">
+                    <li class="active"><a href="#setup">Case setUp</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+                <div id="my-tab-content" class="tab-content">
                     <div class="active" id="setup">
                         <div class="inputs-list">
                             <form action="" method="post">
@@ -24,7 +30,7 @@
                             </form>
                         </div>
                     </div>
-                    <!--div id="cases">
+                    <div id="cases">
                         <div class="inputs-list">
                             <form action="" method="post">
                                 {% csrf_token %}
@@ -32,7 +38,8 @@
                                 <input type="submit" class="btn primary" value="Submit">
                             </form>
                         </div>
-                    </div-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>

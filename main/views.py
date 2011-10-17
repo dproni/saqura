@@ -6,6 +6,7 @@ from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from main.models import *
 from main.form import *
+from main.test import *
 import datetime
 
 def login_page(request):
@@ -49,11 +50,33 @@ def addCase(request):
                                                     'host' : request.get_host(),
                                                     'user' : user
                                                 })
+
+def addCaseType(request):
+    c = {}
+    c.update(csrf(request))
+    user = auth.get_user(request)
+    if request.method == 'POST':
+        form = AddCaseType(data = request.POST)
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
+    else:
+        form = AddCaseType()
+
+    return render_to_response('addcasetype.html', {
+                                                    'form': form,
+                                                    'js': c.items(),
+                                                    'host' : request.get_host(),
+                                                    'user' : user
+                                                })
+
 def addSuite(request):
     c = {}
     c.update(csrf(request))
     user = auth.get_user(request)
-    if request.method == 'POST': # If the form has been submitted...
+    if request.method == 'POST':
         form = AddSuite(data = request.POST) 
         if form.is_valid():
             obj = form.save(commit=False)
@@ -74,10 +97,13 @@ def addResult(request):
     c = {}
     c.update(csrf(request))
     user = auth.get_user(request)
-    if request.method == 'POST': # If the form has been submitted...
+    if request.method == 'POST':
         form = AddResult(data = request.POST) 
         if form.is_valid():
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
     else:
         form = AddResult() 
 
@@ -91,10 +117,13 @@ def addUser(request):
     c = {}
     c.update(csrf(request))
     user = auth.get_user(request)
-    if request.method == 'POST': # If the form has been submitted...
+    if request.method == 'POST':
         form = AddUser(data = request.POST)
         if form.is_valid():
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
     else:
         form = AddUser()
 
@@ -110,12 +139,15 @@ def addRun(request):
     c = {}
     c.update(csrf(request))
     user = auth.get_user(request)
-    if request.method == 'POST': # If the form has been submitted...
-        form = AddResult(data = request.POST) 
+    if request.method == 'POST':
+        form = AddTestRun(data = request.POST)
         if form.is_valid():
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
     else:
-        form = AddResult() 
+        form = AddTestRun()
 
     return render_to_response('addrun.html', {
                                                     'form': form,
@@ -124,6 +156,26 @@ def addRun(request):
                                                     'user' : user
                                                 })
 
+def addBuild(request):
+    c = {}
+    c.update(csrf(request))
+    user = auth.get_user(request)
+    if request.method == 'POST':
+        form = AddBuild(data = request.POST)
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
+#            form.save()
+    else:
+        form = AddBuild()
+
+    return render_to_response('addbuild.html', {
+                                                    'form': form,
+                                                    'js': c.items(),
+                                                    'host' : request.get_host(),
+                                                    'user' : user
+                                                })
 
 def index (request):
     title = 'Welcome to main application'
@@ -150,65 +202,24 @@ def edit (request):
                                             })
 #@login_required
 def info (request):
-    title = 'Welcome to main application'
-    cases = Case.objects.order_by('id')
-    suites = Suite.objects.order_by('id')
+    title   = 'Welcome to main application'
+    cases   = Case.objects.order_by('id')
+    suites  = Suite.objects.order_by('id')
+    users   = User.objects.order_by('id')
+    builds  = Build.objects.order_by('build')
+    runs    = TestRun.objects.order_by('id')
+    caseTypes    = CaseType.objects.order_by('id')
     user = auth.get_user(request)
     return render_to_response('info.html',{
                                             'host' : request.get_host(),
                                             'cases' : cases,
+                                            'caseTypes' : caseTypes,
                                             'suites': suites,
+                                            'users':users,
+                                            'runs':runs,
+                                            'builds':builds,
                                             'user': user
                                             })
-
-def main (request, suite_id, case_id, job_id): #the main executeble workflow
-    title = 'Welcome to main application'
-    suites = Suite.objects.order_by('id')
-    suite = Suite.objects.get(id=suite_id)
-#    cases = Case.objects.order_by('id')
-    cases = suite.cases
-
-#    job = Jobs(is_active=True, user=request.user)
-#    job.save()
-    case = Case.objects.get(id=case_id)
-    user = auth.get_user(request)
-    return render_to_response('main.html', {
-                                             'suite' : suite, 
-                                             'suites': suites,
-                                             'job_id': job_id,
-                                             'case' : case,
-                                             'cases': cases,
-                                             'title' : title,
-                                             'host' : request.get_host(),
-                                             'user': user
-                                             })
-
-def main_begin (request, suite_id): #show the test cases and show activity chooser
-    title = 'Welcome to main application'
-    suites = Suite.objects.order_by('id')
-    suite = Suite.objects.get(id=suite_id)
-    #TODO remove duplicated job
-    job = Jobs(user=request.user, is_active=True)
-    job.save()
-    cases = suite.cases
-    user = auth.get_user(request)
-    return render_to_response('main.html', {
-                                             'suite' : suite,
-                                             'suites': suites,
-                                             'cases': cases,
-                                             'title' : title,
-                                             })
-
-def main_show_suites (request): #display all suites to execute
-    title = 'Welcome to main application'
-    suites = Suite.objects.order_by('id')
-    user = auth.get_user(request)
-    return render_to_response('main_show_suites.html', {
-                                             'suites': suites,
-                                             'host' : request.get_host(),
-                                             'user': user,
-                                             'title': title
-                                             })
 
 def show_suite (request, suite_id):
     item = Suite.objects.get(id=suite_id)
@@ -290,12 +301,12 @@ def editAbilities (request):
     abilities = Abilities.objects.all()
     c = {}
     c.update(csrf(request))
-    if request.method == 'POST': # If the form has been submitted...
+    if request.method == 'POST':
         form = AbilitiesForm(data = request.POST)
         if form.is_valid():
            pass
     else:
-        form = AbilitiesForm(instance = abilities        )
+        form = AbilitiesForm(instance = abilities)
         
     return render_to_response('abilities.html', {
         'form': form,
@@ -311,27 +322,18 @@ def editCase (request, case_id):
     step = case.step
     c = {}
     c.update(csrf(request))
-    if request.method == 'POST': # If the form has been submitted...
-        form = EditCase(data = request.POST) 
+    if request.method == 'POST':
+#        form = EditCase(data = request.POST)
+        form = EditCase(request.POST, instance = case)
         if form.is_valid():
-            case = Case(
-                        id          = case_id,
-                        modified    = datetime.datetime.today(),
-                        name        = form.cleaned_data['name'],
-                        description = form.cleaned_data['description'],
-                        priority    = form.cleaned_data['priority'],
-                        image       = form.cleaned_data['image'],
-                        requirements= form.cleaned_data['requirements'],
-                        step        = form.cleaned_data['step']
-                        )
-            case.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            caseType = request.POST.getlist('caseType')
+            obj.save()
+            form.save_m2m()
+#            form.save()
     else:
-        form = EditCase(initial={'name': name,
-                                 'description': description,
-                                 'priority': priority,
-                                 'image': image,
-                                 'requirements': requirements,
-                                 'step': step,}) 
+        form = EditCase(instance = case)
 
     return render_to_response('editcase.html', {
         'form': form,
@@ -340,25 +342,28 @@ def editCase (request, case_id):
 
 def editSuite (request, suite_id):
     suite = Suite.objects.get(id=suite_id)
-    name = suite.name
-    features = suite.features
-    cases = suite.cases
     c = {}
     c.update(csrf(request))
-    if request.method == 'POST': # If the form has been submitted...
-#        form = EditSuite(data = request.POST)
-        form = EditSuite(request.POST, instance = suite)
+    if request.method == 'POST':
+        caseForm    = AddCase(request.POST)
+        form        = EditSuite(request.POST, instance = suite)
         if form.is_valid():
-            obj = form.save(commit=False)
-            obj.user = request.user
-            cases = request.POST.getlist('cases')
+            obj             = form.save(commit=False)
+            obj.user        = request.user
+            cases           = request.POST.getlist('cases')
             obj.save()
             form.save_m2m()
+        if caseForm.is_valid():
+            caseForm        = caseForm.save(commit=False)
+            caseForm.user   = request.user
+            caseForm.save()
 #            form.save()
     else:
-        form = EditSuite(instance = suite)
+        form        = EditSuite(instance = suite)
+        caseForm    = AddCase()
     return render_to_response('editsuite.html', {
-        'form': form,
-        'suite': suite,
+        'form'      : form,
+        'caseForm'  : caseForm,
+        'suite'     : suite,
 #        'cases' : a
     })
