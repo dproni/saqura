@@ -103,8 +103,6 @@ class Case (models.Model):
                 )
     id          = models.AutoField(primary_key=True)
     name        = models.CharField(max_length=200, unique=True)
-    image       = models.URLField(blank=True)
-    requirements = models.URLField(blank=True)
     priority    = models.CharField(max_length=10, choices=Priority)
     description = models.CharField(max_length=200)
     step        = models.TextField()

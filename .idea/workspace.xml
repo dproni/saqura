@@ -2,428 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3abc3727-b29c-47a2-9382-6bcdca45c630" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/addbuild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/addcasetype.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/editsuite_old.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Untitled-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/failed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/.gitignore.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/.gitmodules.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/CHANGES.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/GPL-LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/MIT-LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/README.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/index.markdown.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/jquery.wysiwyg.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/jquery.wysiwyg.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/jquery.wysiwyg.jpg.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/jquery.wysiwyg.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/prop-base/jquery.wysiwyg.modal.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/.gitignore.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/.gitmodules.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/CHANGES.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/GPL-LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/MIT-LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/README.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/index.markdown.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/jquery.wysiwyg.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/jquery.wysiwyg.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/jquery.wysiwyg.jpg.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/jquery.wysiwyg.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/.svn/text-base/jquery.wysiwyg.modal.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/CHANGES" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/GPL-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/code_style.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/contributing.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/get_dia.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/internals.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/plugins.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/scheme.dia.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/prop-base/scheme.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/code_style.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/contributing.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/get_dia.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/internals.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/plugins.rst.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/scheme.dia.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/.svn/text-base/scheme.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/code_style.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/contributing.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/get_dia.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/internals.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/plugins.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/scheme.dia" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/docs/scheme.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/01-basic.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/02-full.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/03-ajax.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/04-resizable.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/05-ui-dialogs.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/06-hide-heading-buttons.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/07-enable-rtl.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/08-auto-grow.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/09-css-autoloading.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/10-custom-controls.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/11-plugins.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/12-writing-plugins.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/index.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/prop-base/jw_ajax.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/01-basic.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/02-full.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/03-ajax.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/04-resizable.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/05-ui-dialogs.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/06-hide-heading-buttons.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/07-enable-rtl.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/08-auto-grow.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/09-css-autoloading.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/10-custom-controls.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/11-plugins.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/12-writing-plugins.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/index.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/.svn/text-base/jw_ajax.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/01-basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/02-full.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/03-ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/04-resizable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/05-ui-dialogs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/06-hide-heading-buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/07-enable-rtl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/08-auto-grow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/09-css-autoloading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/10-custom-controls.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/11-plugins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/12-writing-plugins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/examples/jw_ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/prop-base/jquery-1.4.4.min.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/prop-base/jquery.simplemodal.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/prop-base/jquery.simplemodal.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/prop-base/x.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/text-base/jquery-1.4.4.min.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/text-base/jquery.simplemodal.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/text-base/jquery.simplemodal.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/.svn/text-base/x.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/jquery-1.4.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/jquery.simplemodal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/jquery.simplemodal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/autoload/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/autoload/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/autoload/.svn/prop-base/jquery.autoload.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/autoload/.svn/text-base/jquery.autoload.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/autoload/jquery.autoload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/prop-base/CHANGELOG.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/prop-base/LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/prop-base/README.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/prop-base/farbtastic.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/text-base/CHANGELOG.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/text-base/LICENSE.txt.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/text-base/README.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/.svn/text-base/farbtastic.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/CHANGELOG.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/README.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/css/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/css/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/css/.svn/prop-base/farbtastic.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/css/.svn/text-base/farbtastic.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/css/farbtastic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/prop-base/demo1.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/prop-base/demo2.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/text-base/demo1.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/.svn/text-base/demo2.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/demo1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/demo/demo2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/farbtastic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/prop-base/marker.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/prop-base/mask.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/prop-base/wheel.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/text-base/marker.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/text-base/mask.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/.svn/text-base/wheel.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/plugins/farbtastic/images/wheel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.blind.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.bounce.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.clip.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.core.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.drop.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.explode.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.fold.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.highlight.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.pulsate.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.scale.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.shake.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.slide.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.effects.transfer.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.accordion.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.accordion.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.all.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.autocomplete.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.autocomplete.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.base.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.button.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.button.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.core.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.core.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.datepicker.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.datepicker.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.dialog.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.dialog.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.draggable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.droppable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.mouse.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.position.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.progressbar.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.progressbar.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.resizable.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.resizable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.selectable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.slider.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.slider.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.sortable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.tabs.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.tabs.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.theme.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/prop-base/jquery.ui.widget.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.blind.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.bounce.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.clip.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.core.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.drop.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.explode.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.fold.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.highlight.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.pulsate.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.scale.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.shake.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.slide.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.effects.transfer.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.accordion.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.accordion.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.all.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.autocomplete.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.autocomplete.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.base.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.button.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.button.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.core.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.core.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.datepicker.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.datepicker.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.dialog.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.dialog.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.draggable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.droppable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.mouse.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.position.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.progressbar.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.progressbar.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.resizable.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.resizable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.selectable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.slider.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.slider.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.sortable.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.tabs.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.tabs.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.theme.css.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/.svn/text-base/jquery.ui.widget.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-anim_basic_16x16.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_flat_0_aaaaaa_40x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_flat_75_ffffff_40x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_glass_55_fbf9ee_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_glass_65_ffffff_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_glass_75_dadada_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_glass_75_e6e6e6_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_glass_95_fef1ec_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-bg_highlight-soft_75_cccccc_1x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-icons_222222_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-icons_2e83ff_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-icons_454545_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-icons_888888_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/prop-base/ui-icons_cd0a0a_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-anim_basic_16x16.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_flat_0_aaaaaa_40x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_flat_75_ffffff_40x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_glass_55_fbf9ee_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_glass_65_ffffff_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_glass_75_dadada_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_glass_75_e6e6e6_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_glass_95_fef1ec_1x400.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-bg_highlight-soft_75_cccccc_1x100.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-icons_222222_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-icons_2e83ff_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-icons_454545_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-icons_888888_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/.svn/text-base/ui-icons_cd0a0a_256x240.png.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-anim_basic_16x16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.blind.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.bounce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.clip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.drop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.explode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.pulsate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.scale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.shake.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.slide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.effects.transfer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.accordion.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.accordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.button.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.draggable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.droppable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.mouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.progressbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.progressbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.resizable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.resizable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.selectable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.slider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.tabs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/ui/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/lib/x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/prop-base/issue 26.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/prop-base/issue 29.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/prop-base/issue005.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/text-base/issue 26.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/text-base/issue 29.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/.svn/text-base/issue005.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/images/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/images/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/images/.svn/prop-base/quote02.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/images/.svn/text-base/quote02.gif.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/images/quote02.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/issue 26.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/issue 29.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_help/tests/issue005.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_layouts/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_layouts/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_layouts/.svn/prop-base/default.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_layouts/.svn/text-base/default.html.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_layouts/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_site/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/_site/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/prop-base/wysiwyg.colorpicker.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/prop-base/wysiwyg.image.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/prop-base/wysiwyg.table.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/text-base/wysiwyg.colorpicker.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/text-base/wysiwyg.image.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/.svn/text-base/wysiwyg.table.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/wysiwyg.colorpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/wysiwyg.image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/controls/wysiwyg.table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/prop-base/lang.fr.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/prop-base/lang.ru.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/prop-base/lang.se.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/text-base/lang.fr.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/text-base/lang.ru.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/.svn/text-base/lang.se.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/lang.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/lang.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/i18n/lang.se.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/index.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/jquery.wysiwyg.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/jquery.wysiwyg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/jquery.wysiwyg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/jquery.wysiwyg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/jquery.wysiwyg.modal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/entries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/prop-base/wysiwyg.autoload.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/prop-base/wysiwyg.i18n.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/prop-base/wysiwyg.rmFormat.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/text-base/wysiwyg.autoload.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/text-base/wysiwyg.i18n.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/.svn/text-base/wysiwyg.rmFormat.js.svn-base" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/wysiwyg.autoload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/wysiwyg.i18n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jwysiwyg/plugins/wysiwyg.rmFormat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/pass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saqura.db" afterPath="$PROJECT_DIR$/saqura.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/admin.py" afterPath="$PROJECT_DIR$/main/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/form.py" afterPath="$PROJECT_DIR$/main/form.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/test.py" afterPath="$PROJECT_DIR$/main/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addcase.html" afterPath="$PROJECT_DIR$/templates/addcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addrun.html" afterPath="$PROJECT_DIR$/templates/addrun.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addsuite.html" afterPath="$PROJECT_DIR$/templates/addsuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editcase.html" afterPath="$PROJECT_DIR$/templates/editcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editsuite.html" afterPath="$PROJECT_DIR$/templates/editsuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/info.html" afterPath="$PROJECT_DIR$/templates/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
     </list>
     <ignored path="saqura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -445,52 +32,53 @@
     <favorites_list name="saqura" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46837607">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/test.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="16" selection-start="311" selection-end="311" vertical-scroll-proportion="0.1875">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="form.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/form.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="31" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="23" selection-start="291" selection-end="340" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main/test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="6" selection-start="593" selection-end="593" vertical-scroll-proportion="0.26966292">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="36" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.7465008">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="34" selection-start="1111" selection-end="1118" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addsuite.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.428571">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addcase.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/addcase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="43" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-18.857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="23" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -506,19 +94,19 @@
       <list>
         <option value="$PROJECT_DIR$/saqura_main/views.py" />
         <option value="$PROJECT_DIR$/main/tests.py" />
-        <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/templates/adduser.html" />
-        <option value="$PROJECT_DIR$/templates/addcase.html" />
-        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/templates/addrun.html" />
         <option value="$PROJECT_DIR$/templates/info.html" />
-        <option value="$PROJECT_DIR$/templates/addsuite.html" />
         <option value="$PROJECT_DIR$/main/views.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/templates/editsuite.html" />
-        <option value="$PROJECT_DIR$/main/test.py" />
+        <option value="$PROJECT_DIR$/main/models.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/main/form.py" />
+        <option value="$PROJECT_DIR$/templates/addsuite.html" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/main/test.py" />
+        <option value="$PROJECT_DIR$/templates/addcase.html" />
         <option value="$PROJECT_DIR$/templates/test.html" />
       </list>
     </option>
@@ -597,22 +185,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="recentsLimit" value="0" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="options.lastSelected" value="settings.github" />
+    <property name="recentsLimit" value="0" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -786,6 +374,10 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/css/redactor.css" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/i/bg_nav_hover.png" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
@@ -798,15 +390,11 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/css/redactor.css" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/link.html" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/static/images/add.png" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/link.html" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
@@ -838,11 +426,11 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/i/resizer.gif" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/i/resizer.gif" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
@@ -962,11 +550,11 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/images/top_06.png" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/images/top_11.png" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/images/top_11.png" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/images/top_06.png" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
@@ -1002,11 +590,11 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/image_edit.html" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/char.html" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/char.html" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/js/redactor/plugins/image_edit.html" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1014,15 +602,11 @@
       <list>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/main/sql" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/static/images" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/main/sql" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
@@ -1030,11 +614,15 @@
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/static/css" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/templates/admin_" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/static/css" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1068,7 +656,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="2" y="22" width="706" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1076,12 +664,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1588785" sideWeight="0.33023873" order="1" side_tool="true" content_ui="tabs" x="876" y="170" width="346" height="389" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997844" sideWeight="0.6710875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16103522" sideWeight="0.6710875" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35312024" sideWeight="0.9985359" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32493368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="521" y="243" width="506" height="245" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3243626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="521" y="243" width="506" height="245" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1107,7 +695,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="    FIXED saving issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="new suite look developing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1123,119 +711,106 @@
     <MESSAGE value="ss" />
     <MESSAGE value="fixed initial values in suites" />
     <MESSAGE value="    FIXED saving issues" />
+    <MESSAGE value="new suite look developing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="45" selection-start="3270" selection-end="3270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/addrun.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="21" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/editsuite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="27" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.60804766">
-          <folding />
-        </state>
+        <state line="34" column="27" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.60804766" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.4682081">
-          <folding />
-        </state>
+        <state line="11" column="8" selection-start="285" selection-end="285" vertical-scroll-proportion="0.18539326" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/moresuite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="64" selection-start="673" selection-end="673" vertical-scroll-proportion="0.017366135">
+        <state line="9" column="16" selection-start="147" selection-end="255" vertical-scroll-proportion="-5.142857" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0877193" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addcasetype.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="69" selection-end="69" vertical-scroll-proportion="0.05263158" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.016853932">
+        <state line="110" column="0" selection-start="3718" selection-end="3718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/application.js">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="285" selection-end="285" vertical-scroll-proportion="0.18539326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/moresuite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="147" selection-end="255" vertical-scroll-proportion="-5.142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0877193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addcasetype.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="69" selection-end="69" vertical-scroll-proportion="0.05263158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addcase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="69" selection-end="69" vertical-scroll-proportion="0.051136363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.051136363">
+        <state line="9" column="1" selection-start="197" selection-end="197" vertical-scroll-proportion="-0.40609953">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="291" selection-end="340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="25" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="31" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0">
+        <state line="74" column="19" selection-start="2244" selection-end="2244" vertical-scroll-proportion="0.8915663">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
+    <entry file="file://$PROJECT_DIR$/templates/addsuite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="311" selection-end="311" vertical-scroll-proportion="0.1875">
+        <state line="13" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.428571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="1111" selection-end="1118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="593" selection-end="593" vertical-scroll-proportion="0.26966292">
+        <state line="14" column="23" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addcase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="43" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-18.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="36" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.7465008">
           <folding />
         </state>
       </provider>

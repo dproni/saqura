@@ -67,4 +67,10 @@ class SuiteEdit(forms.Form):
 
 
 class ContactForm(forms.Form):
-    subject = forms.CharField(max_length=100)
+    suiteName = forms.CharField(max_length=100)
+
+
+class TestCase(forms.Form):
+    caseName   = forms.CharField(max_length=10)
+    caseDescription = forms.CharField(max_length=100)
+    caseText = forms.CharField(max_length=100)

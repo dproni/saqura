@@ -1,16 +1,66 @@
 {% extends "index.html" %}
 
 {% block content %}
-<div id="main">
-    <form action="/test/" method="post">
-    {{ form.non_field_errors }}
-    <div class="fieldWrapper">
-        {{ form.subject.errors }}
-        <label for="id_subject">Email subject:</label>
-        {{ form.subject }}
+    <input type="submit" class="btn primary" id="addCase" value="Add Case">
+
+    {#<a href="#" id="addCase">Add case</a>#}
+    <div class="span12">
+
+        <!--form action="/test/" id="caseAdd">
+            <fieldset>
+                <legend>Example form legend</legend>
+                <div class="clearfix">
+                    <label for="caseName">ввCase Name</label>
+
+                    <div class="input">
+                        <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text"/>
+                    </div>
+                </div>
+                <div class="actions">
+                    <input type="submit" class="btn primary" id="saveCase" value="Save changes">
+                </div>
+            </fieldset>
+        </form-->
     </div>
-    {{ testValue }}
-    <p><input type="submit" value="Send message" /></p>
-</form>
-</div>
+
+    <script>
+
+        $('#addCase').click(function() {
+            //$('.span12').load('/addcase/');
+            //alert('Load was performed.');
+            $.get('{% url main.views.addCase %}', function(data) {
+                $('.span12').append(data);
+                //alert('Load was performed.');
+            });
+        });
+        $('#remCase').live('click', function() {
+            $(this).parents("#case").remove();
+        });
+        $('#saveCase').live('click', function() {
+            $.post('{% url main.views.test %}',
+                  { "caseName": $("#caseName").val() },
+            function(data) {
+                $('.result').html(data);
+            });
+        });
+
+
+    </script>
+
 {% endblock %}
+
+
+<!--<form>
+  <fieldset>
+    <legend>Example form legend</legend>
+    <div class="clearfix">
+      <label for="xlInput">X-Large input</label>
+      <div class="input">
+        <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text" />
+      </div>
+    </div><!-- /clearfix -->
+<!--<div class="actions">
+      <input type="submit" class="btn primary" value="Save changes">&nbsp;<button type="reset" class="btn">Cancel</button>
+    </div>
+  </fieldset>
+</form>-->

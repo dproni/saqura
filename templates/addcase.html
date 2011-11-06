@@ -1,16 +1,37 @@
-{% extends "index.html" %}
+{#{% extends "index.html" %}#}
+{##}
+{#{% block content %}#}
+    {#<div class="content">#}
+    {#<div class="row">#}
+    {#    <div class="span16">#}
+    {#        <div class="inputs-list">#}
+    {#        <form action="{% url main.views.addCase %}" method="post">#}
+    {#                    {% csrf_token %}#}
+    {#                {{ form.as_p }}#}
+    {#                <input type="submit" class="btn primary" value="Submit">#}
+    {#            </form>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#</div>#}
+    <div id="case">
+        <form action="/test/" id="caseAdd">
+            <fieldset>
+                <legend>Example form legend</legend>
+                <div class="clearfix">
+                    <label for="caseName">Case Name</label>
 
-{% block content %}
-<div class="content">
-<div class="row">
-    <div class="span16">
-        <div class="inputs-list">
-        <form action="{% url main.views.addCase %}" method="post">
-                    {% csrf_token %}
-                {{ form.as_p }}
-                <input type="submit" class="btn primary" value="Submit">
-            </form>
+                    <div class="input">
+                        <input class="xlarge" id="caseName" type="text"/>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+        <div class="result">
         </div>
-    </div>
-</div>
-{% endblock %}
+        <div class="actions">
+                    <input type="submit" class="btn primary" id="saveCase" value="Save changes">
+                    <input type="submit" class="btn primary" id="remCase" value="Remove">
+                </div>
+        </div>
+{#{% endblock %}#}
