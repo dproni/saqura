@@ -10,8 +10,13 @@ except ImportError:
 @csrf_exempt
 def test(request):
     if request.is_ajax():
-        case_name = request.POST.get('caseName','')
+#        case_name = request.POST.get('caseName','')
 #        case_name = "ddddd"
-        print case_name
-        return HttpResponse(case_name)
+#        print case_name
+        print "dsdadas"
+#        return HttpResponse(test)
+        caseID = request.POST.get('caseID','')
+        return render_to_response('addcase.html', {
+            "caseID": caseID,
+        })
     return render_to_response('test.html', {})

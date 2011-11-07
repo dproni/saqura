@@ -2,39 +2,41 @@
 
 {% block content %}
     <input type="submit" class="btn primary" id="addCase" value="Add Case">
-
+    <span id="count"></span>
     {#<a href="#" id="addCase">Add case</a>#}
     <div class="span12">
-
-        <!--form action="/test/" id="caseAdd">
-            <fieldset>
-                <legend>Example form legend</legend>
-                <div class="clearfix">
-                    <label for="caseName">ввCase Name</label>
-
-                    <div class="input">
-                        <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text"/>
-                    </div>
-                </div>
-                <div class="actions">
-                    <input type="submit" class="btn primary" id="saveCase" value="Save changes">
-                </div>
-            </fieldset>
-        </form-->
+        <div id="caseContainer">
+        </div>
     </div>
 
     <script>
+        var mainDiv = "#caseContainer";
 
-        $('#addCase').click(function() {
-            //$('.span12').load('/addcase/');
-            //alert('Load was performed.');
-            $.get('{% url main.views.addCase %}', function(data) {
-                $('.span12').append(data);
-                //alert('Load was performed.');
+        $.get('{% url main.views.addCase %}', function(data) {
+                $(mainDiv).append(data);
+                $("#count").html($("#caseContainer > div").length);
             });
+        $('#addCase').live('click', function() {
+            var cases = $("#caseContainer > div").length;            
+            $.post('{% url main.views.test %}',
+                  { "caseID": cases },
+            function(data) {
+                $(mainDiv).append(data);
+            });
+            $("#count").html($("#caseContainer > div").length + 1);
         });
+
+
+{#        $('#addCase').click(function() {#}
+{#            $.get('{% url main.views.addCase %}', function(data) {#}
+{#                $(mainDiv).append(data);#}
+{#            });#}
+{#            $("#count").html($("#caseContainer > div").length + 1);#}
+{#        });#}
+
         $('#remCase').live('click', function() {
             $(this).parents("#case").remove();
+            $("#count").html($("#caseContainer > div").length);
         });
         $('#saveCase').live('click', function() {
             $.post('{% url main.views.test %}',
@@ -42,6 +44,7 @@
             function(data) {
                 $('.result').html(data);
             });
+
         });
 
 
