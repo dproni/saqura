@@ -24,12 +24,7 @@ class EditCaseForm (forms.ModelForm):
 class SuiteEditForm (forms.Form):
     suiteName = forms.CharField(max_length=100)
 
-
-
-# TEST
-
-
-class ContactForm(forms.Form):
+class AddSuiteNameForm(forms.Form):
     suiteName = forms.CharField(max_length=100)
 
 

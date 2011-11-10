@@ -4,7 +4,7 @@
 
     <div class="sidebar">
         <div class="well">
-            <h5>{{ suite.caseName }}</h5>
+            <h5>{{ suite.name }}</h5>
             <ul>
                 {% for i in suite.cases.all %}
                     <li><a href="{% url main.views.show_case i.id %}">{{ i.name }}</a></li>
@@ -14,14 +14,15 @@
     </div>
     <div class="content">
         <div class="row">
-            <div class="span16">
+            <div class="span10">
                 <form action="{% url main.test.editSuite suite.id%}" method="post">
                     <fieldset>
                         {% for field in form %}
                             <div class="clearfix">
-                            <div class="fieldWrapper">
+
                                 {{ field.errors }}
-                                {{ field.label_tag }}: {{ field }}
+                                {{ field.label_tag }}
+                                    <div class="input">{{ field }}</div>
                             </div>
                         {% endfor %}
                         <fieldset>
@@ -30,4 +31,54 @@
             </div>
         </div>
     </div>
+
+<input type="submit" class="btn primary" id="addCase" value="Add Case">
+    <span id="count"></span>
+    {#<a href="#" id="addCase">Add case</a>#}
+    <div class="span12">
+        <div id="caseContainer">
+        </div>
+    </div>
+
+    <script>
+        var mainDiv = "#caseContainer";
+
+        $.get('{% url main.views.addCase %}', function(data) {
+            $(mainDiv).append(data);
+            $("#count").html($("#caseContainer > div").length);
+        });
+        $('#addCase').live('click', function() {
+            var cases = $("#caseContainer > div").length;
+            $.post('{% url main.views.test %}',
+            { "caseID": cases },
+                  function(data) {
+                      $(mainDiv).append(data);
+                  });
+            $("#count").html($("#caseContainer > div").length + 1);
+        });
+
+
+        {#        $('#addCase').click(function() {#}
+        {#            $.get('{% url main.views.addCase %}', function(data) {#}
+        {#                $(mainDiv).append(data);#}
+        {#            });#}
+        {#            $("#count").html($("#caseContainer > div").length + 1);#}
+        {#        });#}
+
+        $('#remCase').live('click', function() {
+            $(this).parents("#case").remove();
+            $("#count").html($("#caseContainer > div").length);
+        });
+        $('#saveCase').live('click', function() {
+            $.post('{% url main.views.caseWorker %}',
+            { "caseName": $("#caseName").val() },
+                  function(data) {
+                      $('.result').html(data);
+                  });
+
+        });
+
+
+    </script>
+
 {% endblock %}

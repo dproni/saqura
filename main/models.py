@@ -45,7 +45,6 @@ class Suite (models.Model):
     features    = models.TextField()
     modified    = models.DateTimeField(editable=False, null=True)
     cases       = models.ManyToManyField(Case, null=True)
-    user        = models.ForeignKey(User, editable=False)
 
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''

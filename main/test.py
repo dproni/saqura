@@ -40,12 +40,12 @@ def caseWorker(request):
 
 @csrf_exempt
 def addSuite(request):
-    form = AddSuiteForm()
+    form = AddSuiteNameForm()
     if request.method == 'POST':
-        case = testtestcase()
-        case.caseName = request.POST.get('caseName','')
-        case.save()
-        return HttpResponseRedirect('/editsuite/%s' % case.id)
+        suite = Suite()
+        suite.name= request.POST.get('suiteName','')
+        suite.save()
+        return HttpResponseRedirect('/editsuite/%s' % suite.id)
     return render_to_response('addsuite.html', {
         "form": form
     })
@@ -53,12 +53,11 @@ def addSuite(request):
 
 @csrf_exempt
 def editSuite (request, suite):
-    suite = testtestcase.objects.get(id = suite)
+    suite = Suite.objects.get(id = suite)
 
-    form = testtestcaseEdit()
+    form = EditSuiteForm()
     if request.method == 'POST':
         suite.caseName = request.POST.get('caseName', '')
-#        suite.caseName = "Dddd"
         suite.save()
         return HttpResponseRedirect('/editsuite/%s' % suite.id)
 

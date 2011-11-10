@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3abc3727-b29c-47a2-9382-6bcdca45c630" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/views_old.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/addsuite_old.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saqura.db" afterPath="$PROJECT_DIR$/saqura.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/admin.py" afterPath="$PROJECT_DIR$/main/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/form.py" afterPath="$PROJECT_DIR$/main/form.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/test.py" afterPath="$PROJECT_DIR$/main/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addcase.html" afterPath="$PROJECT_DIR$/templates/addcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addsuite.html" afterPath="$PROJECT_DIR$/templates/addsuite.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editsuite.html" afterPath="$PROJECT_DIR$/templates/editsuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/info.html" afterPath="$PROJECT_DIR$/templates/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
     </list>
     <ignored path="saqura.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +33,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+            <state line="46" column="33" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,7 +42,7 @@
       <file leaf-file-name="form.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="-5.5384617">
+            <state line="13" column="19" selection-start="363" selection-end="376" vertical-scroll-proportion="-4.5384617">
               <folding />
             </state>
           </provider>
@@ -70,27 +60,27 @@
       <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="12" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
+            <state line="57" column="24" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editsuite.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="editsuite.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/editsuite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="50" selection-start="649" selection-end="671" vertical-scroll-proportion="-11.428572">
+            <state line="29" column="23" selection-start="470" selection-end="1062" vertical-scroll-proportion="0.65957445">
               <folding>
-                <marker date="1320893393000" expanded="true" signature="114:346" placeholder="..." />
+                <marker date="1320902712000" expanded="true" signature="114:342" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/views.py">
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="34" selection-start="3889" selection-end="3889" vertical-scroll-proportion="-9.692307">
+            <state line="51" column="0" selection-start="52" selection-end="1665" vertical-scroll-proportion="-8.714286">
               <folding />
             </state>
           </provider>
@@ -117,16 +107,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="17" selection-start="2042" selection-end="2042" vertical-scroll-proportion="-16.0">
+            <state line="23" column="64" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-3.4285715">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.24324325">
+            <state line="16" column="69" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,15 +143,15 @@
         <option value="$PROJECT_DIR$/templates/addcase.html" />
         <option value="$PROJECT_DIR$/main/widgets.py" />
         <option value="$PROJECT_DIR$/templates/addsuite.html" />
-        <option value="$PROJECT_DIR$/templates/editsuite.html" />
-        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/templates/info.html" />
         <option value="$PROJECT_DIR$/main/views.py" />
-        <option value="$PROJECT_DIR$/main/form.py" />
-        <option value="$PROJECT_DIR$/main/test.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/main/form.py" />
+        <option value="$PROJECT_DIR$/main/models.py" />
+        <option value="$PROJECT_DIR$/main/test.py" />
+        <option value="$PROJECT_DIR$/templates/editsuite.html" />
       </list>
     </option>
   </component>
@@ -721,7 +711,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1588785" sideWeight="0.33023873" order="1" side_tool="true" content_ui="tabs" x="876" y="170" width="346" height="389" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997844" sideWeight="0.6710875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35171387" sideWeight="0.9985359" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35171387" sideWeight="0.6710875" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.37798408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="521" y="243" width="506" height="245" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -750,7 +740,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="new suite look developing" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleared" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -767,6 +757,7 @@
     <MESSAGE value="fixed initial values in suites" />
     <MESSAGE value="    FIXED saving issues" />
     <MESSAGE value="new suite look developing" />
+    <MESSAGE value="cleared" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -793,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="282" selection-end="282" vertical-scroll-proportion="-5.142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/addcase.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="37" selection-start="175" selection-end="186" vertical-scroll-proportion="-3.4285715">
@@ -814,39 +798,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editsuite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="50" selection-start="649" selection-end="671" vertical-scroll-proportion="-11.428572">
-          <folding>
-            <marker date="1320893393000" expanded="true" signature="114:346" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="-5.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="12" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -872,17 +826,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="17" selection-start="2042" selection-end="2042" vertical-scroll-proportion="-16.0">
+        <state line="16" column="69" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
+    <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.24324325">
+        <state line="46" column="33" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="363" selection-end="376" vertical-scroll-proportion="-4.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="52" selection-end="1665" vertical-scroll-proportion="-8.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="64" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-3.4285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editsuite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="23" selection-start="470" selection-end="1062" vertical-scroll-proportion="0.65957445">
+          <folding>
+            <marker date="1320902712000" expanded="true" signature="114:342" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
