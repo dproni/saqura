@@ -13,37 +13,37 @@
         var mainDiv = "#caseContainer";
 
         $.get('{% url main.views.addCase %}', function(data) {
-                $(mainDiv).append(data);
-                $("#count").html($("#caseContainer > div").length);
-            });
+            $(mainDiv).append(data);
+            $("#count").html($("#caseContainer > div").length);
+        });
         $('#addCase').live('click', function() {
-            var cases = $("#caseContainer > div").length;            
+            var cases = $("#caseContainer > div").length;
             $.post('{% url main.views.test %}',
-                  { "caseID": cases },
-            function(data) {
-                $(mainDiv).append(data);
-            });
+            { "caseID": cases },
+                  function(data) {
+                      $(mainDiv).append(data);
+                  });
             $("#count").html($("#caseContainer > div").length + 1);
         });
 
 
-{#        $('#addCase').click(function() {#}
-{#            $.get('{% url main.views.addCase %}', function(data) {#}
-{#                $(mainDiv).append(data);#}
-{#            });#}
-{#            $("#count").html($("#caseContainer > div").length + 1);#}
-{#        });#}
+        {#        $('#addCase').click(function() {#}
+        {#            $.get('{% url main.views.addCase %}', function(data) {#}
+        {#                $(mainDiv).append(data);#}
+        {#            });#}
+        {#            $("#count").html($("#caseContainer > div").length + 1);#}
+        {#        });#}
 
         $('#remCase').live('click', function() {
             $(this).parents("#case").remove();
             $("#count").html($("#caseContainer > div").length);
         });
         $('#saveCase').live('click', function() {
-            $.post('{% url main.views.test %}',
-                  { "caseName": $("#caseName").val() },
-            function(data) {
-                $('.result').html(data);
-            });
+            $.post('{% url main.views.caseWorker %}',
+            { "caseName": $("#caseName").val() },
+                  function(data) {
+                      $('.result').html(data);
+                  });
 
         });
 

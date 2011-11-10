@@ -3,7 +3,7 @@
 {% block content %}
 <div class="content">
     <div class="row">
-        <div class="span3">
+        <div class="span4">
             <h2>Suites</h2>
 
             <div id="info_text">We have {{ suites|length }} suites</div>
@@ -11,7 +11,8 @@
                 <a href="/suite/{{i.id}}">{{ i.name }}</a> <a href="/editsuite/{{i.id}}">edit</a><br>
             {% endfor %}
         </div>
-        <div class="span3">
+
+        <div class="span4">
             <h2>Cases</h2>
 
             <div id="info_text">We have {{ cases|length }} cases</div>
@@ -19,31 +20,6 @@
                 <a href="/case/{{i.id}}">{{ i.name }}</a> <a href="/editcase/{{i.id}}">edit</a><br>
             {% endfor %}
         </div>
-        <div class="span3">
-            <h2>Case Types</h2>
-
-            <div id="info_text">We have {{ caseTypes|length }} Case Types</div>
-            {% for i in caseTypes %}
-                {{ i.name }}<br>
-            {% endfor %}
-        </div>
-        <div class="span3">
-            <h2>Builds</h2>
-
-            <div id="info_text">We have {{ builds|length }} builds</div>
-            {% for i in builds %}
-                {{ i.build }}<br>
-            {% endfor %}
-        </div>
-        <div class="span3">
-            <h2>Runs</h2>
-
-            <div id="info_text">We have {{ runs|length }} runs</div>
-            {% for i in runs %}
-                {{ i.id }}<br>
-            {% endfor %}
-        </div>
-
     </div>
     {##}
     {#{% if form.errors %}#}

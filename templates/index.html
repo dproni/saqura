@@ -33,9 +33,8 @@
           <a class="brand" href="#">saQurA</a>
           <ul class="nav">
             <li class="active"><a href="/">Home</a></li>
-            <li><a href="{% url main.views.info %}">Info</a></li>
+            <li><a href="{% url main.views.info %}{% url main.views.info %}">Info</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="{% url main.views.execute %}">Execute</a></li>
           </ul>
           <ul class="nav">
             <li class="dropdown">
@@ -43,10 +42,6 @@
               <ul class="dropdown-menu">
                   <li><a href="{% url main.views.addSuite %}" >Test Suite</a></li>
                   <li><a href="{% url main.views.addCase %}" >Test Case</a></li>
-                  <li><a href="{% url main.views.addCaseType %}" >Case Type</a></li>
-                  <li><a href="{% url main.views.addRun %}" >Run</a></li>
-                  <li><a href="{% url main.views.addUser %}" >User</a></li>
-                  <li><a href="{% url main.views.addBuild %}" >Build</a></li>
               </ul>
             </li>
           </ul>
@@ -54,9 +49,6 @@
           <ul class="nav">
             <li class="dropdown">
               <a href="{% url main.views.create %}" class="dropdown-toggle">Edit</a>
-              <ul class="dropdown-menu">
-                  <li><a href="{% url main.views.editAbilities %}" >Edit abilities</a></li>
-              </ul>
             </li>
           </ul>
           <p class="pull-right">{% now "jS F Y H:i:s" %}</p>

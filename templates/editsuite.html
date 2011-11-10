@@ -4,7 +4,7 @@
 
     <div class="sidebar">
         <div class="well">
-            <h5>{{ suite.name }}</h5>
+            <h5>{{ suite.caseName }}</h5>
             <ul>
                 {% for i in suite.cases.all %}
                     <li><a href="{% url main.views.show_case i.id %}">{{ i.name }}</a></li>
@@ -15,24 +15,18 @@
     <div class="content">
         <div class="row">
             <div class="span16">
-                    <div class="active" id="setup">
-                        <div class="inputs-list">
-                            <form action="" method="post">
-                                {% csrf_token %}
-                                {{ form.as_p }}
-                                <input type="submit" class="btn primary" value="Submit">
-                            </form>
-                        </div>
-                    </div>
-                    <!--div id="cases">
-                        <div class="inputs-list">
-                            <form action="" method="post">
-                                {% csrf_token %}
-                                {{ caseForm.as_p }}
-                                <input type="submit" class="btn primary" value="Submit">
-                            </form>
-                        </div>
-                    </div-->
+                <form action="{% url main.test.editSuite suite.id%}" method="post">
+                    <fieldset>
+                        {% for field in form %}
+                            <div class="clearfix">
+                            <div class="fieldWrapper">
+                                {{ field.errors }}
+                                {{ field.label_tag }}: {{ field }}
+                            </div>
+                        {% endfor %}
+                        <fieldset>
+                            <input type="submit" class="btn primary" value="Submit">
+                </form>
             </div>
         </div>
     </div>

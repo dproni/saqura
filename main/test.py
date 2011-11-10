@@ -10,13 +10,59 @@ except ImportError:
 @csrf_exempt
 def test(request):
     if request.is_ajax():
+        print "dsdadas"
+        caseID = request.POST.get('caseID','')
+        caseTitle = request.POST.get('caseName','')
+        return render_to_response('addcase.html', {
+            "caseID": caseID,
+            "caseTitle": caseTitle,
+        })
+    return render_to_response('test.html', {})
+
+@csrf_exempt
+def caseWorker(request):
+    if request.is_ajax():
 #        case_name = request.POST.get('caseName','')
 #        case_name = "ddddd"
 #        print case_name
+        case = testtestcase()
+        case.caseName = request.POST.get('caseName','')
+        case.save()
         print "dsdadas"
-#        return HttpResponse(test)
-        caseID = request.POST.get('caseID','')
-        return render_to_response('addcase.html', {
-            "caseID": caseID,
-        })
+        return HttpResponse("ddd")
+#        caseID = request.POST.get('caseID','')
+#        caseTitle = request.POST.get('caseName','')
+#        return render_to_response('addcase.html', {
+#            "caseID": caseID,
+#            "caseTitle": caseTitle,
+#        })
     return render_to_response('test.html', {})
+
+@csrf_exempt
+def addSuite(request):
+    form = AddSuiteForm()
+    if request.method == 'POST':
+        case = testtestcase()
+        case.caseName = request.POST.get('caseName','')
+        case.save()
+        return HttpResponseRedirect('/editsuite/%s' % case.id)
+    return render_to_response('addsuite.html', {
+        "form": form
+    })
+
+
+@csrf_exempt
+def editSuite (request, suite):
+    suite = testtestcase.objects.get(id = suite)
+
+    form = testtestcaseEdit()
+    if request.method == 'POST':
+        suite.caseName = request.POST.get('caseName', '')
+#        suite.caseName = "Dddd"
+        suite.save()
+        return HttpResponseRedirect('/editsuite/%s' % suite.id)
+
+    return render_to_response('editsuite.html', {
+    "form": form,
+    "suite": suite
+    })
