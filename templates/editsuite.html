@@ -15,65 +15,79 @@
     <div class="content">
         <div class="row">
             <div class="span10">
-                <form action="{% url main.test.editSuite suite.id%}" method="post">
-                    <fieldset>
-                        {% for field in form %}
-                            <div class="clearfix">
+                <input type="submit" class="btn primary" id="addCase" value="Add Case">
+                <span id="count"></span>
+                <div class="span10">
+                    <div id="caseContainer">
 
-                                {{ field.errors }}
-                                {{ field.label_tag }}
-                                    <div class="input">{{ field }}</div>
+                        {% for case in cases %}
+                            <form action="{% url main.views.caseWorker %}" id="{{ case.id }}">
+                                <fieldset>
+                                    <legend>{{ case.name }} - {{ case.id }}</legend>
+                                    <div class="clearfix">
+                                        <label for="caseName">Case Name</label>
+
+                                        <div class="input">
+                                            <input class="xlarge" id="caseName" type="text" value="{{ case.name }}"/>
+                                        </div>
+                                    </div>
+
+
+                                </fieldset>
+                            </form>
+
+
+                            <div class="actions" id= {{ case.id }}>
+                                <input type="submit" class="btn primary" id="saveCase" value="Save changes">
+                                <input type="submit" class="btn primary" id="remCase" value="Remove">
                             </div>
                         {% endfor %}
-                        <fieldset>
-                            <input type="submit" class="btn primary" value="Submit">
-                </form>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-<input type="submit" class="btn primary" id="addCase" value="Add Case">
-    <span id="count"></span>
-    {#<a href="#" id="addCase">Add case</a>#}
-    <div class="span12">
-        <div id="caseContainer">
-        </div>
-    </div>
+
 
     <script>
         var mainDiv = "#caseContainer";
 
         $.get('{% url main.views.addCase %}', function(data) {
-            $(mainDiv).append(data);
+            var cases = $("#caseContainer > div").length;
+            $.post('{% url main.views.addCase %}',
+            { "caseID": cases },
+                  function(data) {
+                      $(mainDiv).append(data);
+                  });
             $("#count").html($("#caseContainer > div").length);
         });
         $('#addCase').live('click', function() {
             var cases = $("#caseContainer > div").length;
-            $.post('{% url main.views.test %}',
-            { "caseID": cases },
+            $.post('{% url main.views.addCase %}',
+            { "caseId": cases + 1},
                   function(data) {
                       $(mainDiv).append(data);
                   });
             $("#count").html($("#caseContainer > div").length + 1);
         });
 
-
-        {#        $('#addCase').click(function() {#}
-        {#            $.get('{% url main.views.addCase %}', function(data) {#}
-        {#                $(mainDiv).append(data);#}
-        {#            });#}
-        {#            $("#count").html($("#caseContainer > div").length + 1);#}
-        {#        });#}
-
         $('#remCase').live('click', function() {
             $(this).parents("#case").remove();
             $("#count").html($("#caseContainer > div").length);
         });
         $('#saveCase').live('click', function() {
+            var id = $(this).parent().attr("id")
+//            var result = $(this).closest("result")
             $.post('{% url main.views.caseWorker %}',
-            { "caseName": $("#caseName").val() },
+            {
+                "caseName": $("form").find("#caseName").filter(id).val(),
+                "caseId": id,
+
+            },
                   function(data) {
-                      $('.result').html(data);
+//                      $(result).html(data);
                   });
 
         });
@@ -82,3 +96,19 @@
     </script>
 
 {% endblock %}
+
+
+
+{#<form action="{% url main.test.editSuite suite.id%}" method="post">#}
+{#    <fieldset>#}
+{#        {% for field in form %}#}
+{#            <div class="clearfix">#}
+{##}
+{#                {{ field.errors }}#}
+{#                {{ field.label_tag }}#}
+{#                <div class="input">{{ field }}</div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#        <fieldset>#}
+{#            <input type="submit" class="btn primary" value="Submit">#}
+{#</form>#}

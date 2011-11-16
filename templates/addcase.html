@@ -1,38 +1,20 @@
-{#{% extends "index.html" %}#}
-{##}
-{#{% block content %}#}
-    {#<div class="content">#}
-    {#<div class="row">#}
-    {#    <div class="span16">#}
-    {#        <div class="inputs-list">#}
-    {#        <form action="{% url main.views.addCase %}" method="post">#}
-    {#                    {% csrf_token %}#}
-    {#                {{ form.as_p }}#}
-    {#                <input type="submit" class="btn primary" value="Submit">#}
-    {#            </form>#}
-    {#        </div>#}
-    {#    </div>#}
-    {#</div>#}
-    <div id="case">
-        <form action="/test/" id="{{ caseID }}">
-            <fieldset>
-                <legend>{{ caseID }} - {{ caseTitle }}</legend>
-                <div class="clearfix">
-                    <label for="caseName">Case Name</label>
+<div id="case">
+    <form action="{% url main.views.caseWorker %}" id="{{ case.id }}">
+        <fieldset>
+            <legend>{{ case.id }} - {{ case.name }}</legend>
+            <div class="clearfix">
+                <label for="caseName">Case Name</label>
 
-                    <div class="input">
-                        <input class="xlarge" id="caseName" type="text"/>
-                    </div>
+                <div class="input">
+                    <input class="xlarge" id="caseName" type="text"/>
                 </div>
-                
+            </div>
 
-            </fieldset>
-        </form>
-        <div class="result">
-        </div>
-        <div class="actions">
-                    <input type="submit" class="btn primary" id="saveCase" value="Save changes">
-                    <input type="submit" class="btn primary" id="remCase" value="Remove">
-                </div>
-        </div>
-{#{% endblock %}#}
+
+        </fieldset>
+    </form>
+    <div class="actions" id= {{ case.id }}>
+        <input type="submit" class="btn primary" id="saveCase" value="Save changes">
+        <input type="submit" class="btn primary" id="remCase" value="Remove">
+    </div>
+</div>

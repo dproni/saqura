@@ -31,26 +31,26 @@ def logout(request):
     auth.logout(request)
     return HttpResponseRedirect('/')
 
-def addCase(request):
-    c = {}
-    c.update(csrf(request))
-    user = auth.get_user(request)
-    if request.method == 'POST': 
-        form = AddCase(data = request.POST) 
-        if form.is_valid():
-            obj = form.save(commit=False)
-            obj.user = request.user
-            obj.save()
-#            form.save()
-    else:
-        form = AddCase() 
-
-    return render_to_response('addcase.html', {
-                                                    'form': form,
-                                                    'js': c.items(),
-                                                    'host' : request.get_host(),
-                                                    'user' : user
-                                                })
+#def addCase(request):
+#    c = {}
+#    c.update(csrf(request))
+#    user = auth.get_user(request)
+#    if request.method == 'POST':
+#        form = AddCase(data = request.POST)
+#        if form.is_valid():
+#            obj = form.save(commit=False)
+#            obj.user = request.user
+#            obj.save()
+##            form.save()
+#    else:
+#        form = AddCase()
+#
+#    return render_to_response('addcase.html', {
+#                                                    'form': form,
+#                                                    'js': c.items(),
+#                                                    'host' : request.get_host(),
+#                                                    'user' : user
+#                                                })
 def index (request):
     title = 'Welcome to main application'
     cases = Case.objects.order_by('id')
@@ -134,6 +134,8 @@ def editCase (request, case_id):
         'form': form,
         'case': case,
     })
+
+
 
 #def editSuite (request, suite_id):
 #    try:
